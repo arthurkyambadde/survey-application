@@ -6,7 +6,7 @@ import Exercise from "./components/exercise/Excercise";
 import { VenuesProvider } from "./contexts/SelectedVenuesContext";
 import { ONBOARDING_DATA, EXERCISE_DATA } from "./data/Screens";
 import { Instructions, VideoIntroduction } from "./screens/onboarding";
-import { VenueSelection } from "./screens/question";
+import { VenueRating, VenueSelection } from "./screens/question";
 
 export const ScrollContext = createContext(null);
 
@@ -62,6 +62,7 @@ const App = () => {
             <VideoIntroduction {...ONBOARDING_DATA.introduction} />
             <Instructions {...ONBOARDING_DATA.instructions} />
             <VenueSelection />
+            <VenueRating />
           </div>
         </div>
       </VenuesProvider>
