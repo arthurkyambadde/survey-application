@@ -15,9 +15,9 @@ function DateAvailability() {
         </div>
         <div className="w-full">
           <DateOptions />
-          <a href="#" className="text-xl text-primarybtn underline">
+          <p p className="text-xl text-primarybtn underline">
             Add choice
-          </a>
+          </p>
         </div>
       </div>
     </section>
