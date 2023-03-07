@@ -1,7 +1,7 @@
 import React from "react";
 import { Submit } from "../../../components/buttons/Submit";
 
-function VideoIntroduction({ title, video }) {
+export function VideoIntroduction({ title, video }) {
   return (
     <section
       className={`h-screen w-screen flex items-center flex-col justify-center`}
@@ -18,5 +18,3 @@ function VideoIntroduction({ title, video }) {
     </section>
   );
 }
-
-export default VideoIntroduction;
