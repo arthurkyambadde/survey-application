@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import tickIcon from "../../assets/icons/tick.svg";
+import { ScrollContext } from "../../App";
 
 function DateOptions() {
   const [selectedOption, setSelectedOption] = useState("");
+  const { scrollDown } = useContext(ScrollContext);
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -36,7 +38,7 @@ function DateOptions() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full" onClick={scrollDown}>
       {options.map((option) => (
         <label
           key={option.value}

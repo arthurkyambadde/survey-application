@@ -1,49 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import tickIcon from "../../assets/icons/tick.svg";
+import { ScrollContext } from "../../App";
 
 function SubOptionChoice() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("");
+  const { scrollDown } = useContext(ScrollContext);
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
 
+  const options = [
+    {
+      value: "A",
+      label: "My Favourites",
+    },
+    {
+      value: "B",
+      label: "This could work",
+    },
+    {
+      value: "C",
+      label: "Not for me",
+    },
+  ];
+
   return (
-    <div className="flex flex-col gap-2">
-      {["My Favourites", "This could work", "Not for me"].map((option) => (
-        <div key={option} className="flex gap-2 items-center">
-          <label
-            className={`bg-checkboxBg hover:bg-checkboxHoverBg cursor-pointer flex py-0.25 px-2 py-2 rounded w-full border-primarybtn  mb-2 gap-2`}
-          >
-            <input
-              type="radio"
-              name="options"
-              value={option}
-              checked={selectedOption === option}
-              onChange={handleOptionChange}
-              className="hidden"
-            />
-            {option === "My Favourites" && (
-              <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
-                A
-              </span>
-            )}
-            {option === "This could work" && (
-              <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
-                B
-              </span>
-            )}
-            {option === "Not for me" && (
-              <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
-                C
-              </span>
-            )}
-            <span>{option.charAt(0).toUpperCase() + option.slice(1)}</span>
-            {selectedOption === option && (
-              <img src={tickIcon} alt="tick" className="h-6 w-6" />
-            )}
-          </label>
-        </div>
+    <div className="w-[30px]" onClick={scrollDown}>
+      {options.map((option) => (
+        <label
+          key={option.value}
+          className="flex items-center gap-2 mb-2 cursor-pointer w-[200px] bg-checkboxBg hover:bg-checkboxHoverBg p-2 rounded text-primarybtn font-normal text-xl"
+        >
+          <input
+            type="radio"
+            name="options"
+            value={option.value}
+            checked={selectedOption === option.value}
+            onChange={handleOptionChange}
+            className="hidden"
+          />
+          <span className="w-7 h-7 rounded border bg-white border-primarybtn flex items-center justify-center">
+            {option.value}
+          </span>
+          <span>{option.label}</span>
+          {selectedOption === option.value && (
+            <img src={tickIcon} alt="tick" className="h-6 w-6" />
+          )}
+        </label>
       ))}
     </div>
   );

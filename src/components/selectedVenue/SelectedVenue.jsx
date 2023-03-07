@@ -23,9 +23,9 @@ function SelectedVenue() {
         >
           <div className="w-1/2 p-24 h-auto flex flex-col justify-between">
             <h3 className="text-2xl mb-6 font-semibold">{option.venueName}</h3>
-            <p className="text-2xl mb-6 font-normal">
+            <div className="text-2xl mb-6 font-normal">
               <p className="underline">Download</p> Venue Specific Details
-            </p>
+            </div>
             <div className="w-64 flex flex-col gap-2">
               <SubOptionChoice />
             </div>
@@ -50,16 +50,22 @@ function SelectedVenue() {
   });
 
   return (
-    <div className="h-auto">
-      <>{venueList}</>
-      <AppointMent />
-      <DateAvailability />
-      <SelectDate />
-      <Notes />
-      <section className="h-screen w-screen flex items-center justify-center">
-        <p>Thank you for completing the Venue Ranker!</p>
-      </section>
-    </div>
+    <>
+      {selectedVenues.length >= 2 ? (
+        <div className="h-auto">
+          <>{venueList}</>
+          <AppointMent />
+          <DateAvailability />
+          <SelectDate />
+          <Notes />
+          <section className="h-screen w-screen flex items-center justify-center">
+            <p>Thank you for completing the Venue Ranker!</p>
+          </section>
+        </div>
+      ) : (
+        <></>
+      )}
+    </>
   );
 }
 
