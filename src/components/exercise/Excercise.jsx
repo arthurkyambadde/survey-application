@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { VenuesContext } from "../../contexts/SelectedVenuesContext";
-import ChoicesError from "../error/Choices";
+import ChoicesError from "../error/Error";
 import Confirm from "../buttons/Confirm";
 import CheckBox from "../inputs/CheckBox";
 
