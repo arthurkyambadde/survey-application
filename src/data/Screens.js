@@ -11,24 +11,20 @@ export const ONBOARDING_DATA = {
   },
 };
 
-export const EXERCISE_DATA = {
-  questions: [
-    {
-      id: "1",
-      title: "Tell us about your dream venue!",
-      instruction: "",
-      answers: {
-        type: "multi_select",
-        choices: [
-          { id: "A", text: "Gordon Greenery" },
-          { id: "B", text: "Desert dream" },
-          { id: "C", text: "Distinctily arizona" },
-          { id: "D", text: "Industrial" },
-          { id: "E", text: "Modern" },
-          { id: "F", text: "Rustic yet Chic" },
-        ],
-      },
-      image: `../url/to/img.jp`,
-    },
-  ],
+export const STEP_1_QUESTION = {
+  id: "1",
+  title: "Tell us about your dream venue!",
+  instruction: "",
+  answers: {
+    type: "multi_select",
+    choices: [
+      { id: "A", text: "Gordon Greenery" },
+      { id: "B", text: "Desert dream" },
+      { id: "C", text: "Distinctily arizona" },
+      { id: "D", text: "Industrial" },
+      { id: "E", text: "Modern" },
+      { id: "F", text: "Rustic yet Chic" },
+    ],
+  },
+  image: `../url/to/img.jp`,
 };

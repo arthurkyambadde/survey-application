@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { VenuesContext } from "../contexts/SelectedVenuesContext";
 
 export function useVenue() {
-  const { selectedVenues, setSelectedVenues } = useContext(VenuesContext);
+  const { selectedVenues, setSelectedVenues, hasError } =
+    useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
     if (selectedVenues.includes(id)) {
