@@ -7,8 +7,6 @@ import CheckBox from "../inputs/CheckBox";
 function Exercise({ id, title, instruction, answers, image }) {
   const { selectedVenues, setSelectedVenues } = useContext(VenuesContext);
 
-  console.log(answers, id, title, image, "answers");
-
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [message, setMessage] = useState("");
 

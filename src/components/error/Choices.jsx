@@ -1,4 +1,5 @@
 import React from "react";
+import errorIcon from "../../assets/icons/error.svg";
 
 export default function ChoicesError() {
   return (
