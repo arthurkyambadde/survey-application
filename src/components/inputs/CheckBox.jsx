@@ -1,5 +1,6 @@
 import React from "react";
 import Label from "./Label";
+import tickIcon from "../../assets/icons/tick.svg";
 
 export default function CheckBox({ id, isChecked, onChange, label }) {
   //
