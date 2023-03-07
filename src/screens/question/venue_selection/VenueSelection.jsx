@@ -11,6 +11,7 @@ export function VenueSelection() {
       selectedValues={selectedVenues}
       onMakeSelection={toggleSelectedVenue}
       title={STEP_1_QUESTION.title}
+      subtitle={STEP_1_QUESTION.instruction}
       showError={hasError}
       type={STEP_1_QUESTION.answers.type}
       options={STEP_1_QUESTION.answers.choices}
