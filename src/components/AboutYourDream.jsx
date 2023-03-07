@@ -56,12 +56,6 @@ function AboutYourDream() {
     );
   });
 
-  const handleOkClick = () => {
-    if (selectedChoices.length >= 2) {
-      console.log("Submit the form!");
-    }
-  };
-
   const errorDisplay =
     selectedChoices.length < 2 ? (
       <p className="mt-3 p-2 bg-erroBg text-errorColor text-sm w-[250px] rounded flex align-middle justify-center gap-2">

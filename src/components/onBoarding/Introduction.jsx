@@ -1,7 +1,6 @@
 import React from "react";
 import enterIcon from "../../assets/icons/enterIcon.svg";
 import PrimaryButton from "../buttons/PrimaryButton";
-import { ScrollContext } from "../../App";
 
 function Introduction() {
   return (
