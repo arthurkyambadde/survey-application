@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import tickIcon from "../../assets/icons/tick.svg";
 
 function Choice(props) {
@@ -20,7 +20,7 @@ function Choice(props) {
       />
       <label
         htmlFor={checkboxId}
-        className="inline-flex items-center cursor-pointer justify-between w-full"
+        className="inline-flex items-center cursor-pointer justify-between w-full h-full"
       >
         <div className="flex gap-1">
           <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">

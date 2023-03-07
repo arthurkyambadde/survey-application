@@ -1,8 +1,8 @@
 import React from "react";
-import PrimaryButton from "./buttons/PrimaryButton";
-import enterIcon from "../assets/icons/enterIcon.svg";
+import PrimaryButton from "../buttons/PrimaryButton";
+import enterIcon from "../../assets/icons/enterIcon.svg";
 
-function PixiePoint() {
+function Instructions() {
   return (
     <section className="h-screen w-screen flex items-center justify-center">
       <div className="w-1/2 p-24 h-1/2 flex flex-col justify-between">
@@ -30,4 +30,4 @@ function PixiePoint() {
   );
 }
 
-export default PixiePoint;
+export default Instructions;

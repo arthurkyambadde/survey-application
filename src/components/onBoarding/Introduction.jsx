@@ -1,8 +1,8 @@
 import React from "react";
-import enterIcon from "../assets/icons/enterIcon.svg";
-import PrimaryButton from "./buttons/PrimaryButton";
+import enterIcon from "../../assets/icons/enterIcon.svg";
+import PrimaryButton from "../buttons/PrimaryButton";
 
-function Hero() {
+function Introduction() {
   return (
     <section
       className={`h-screen w-screen flex items-center flex-col justify-center`}
@@ -26,4 +26,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Introduction;

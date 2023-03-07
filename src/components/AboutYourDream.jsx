@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Choice from "./choice/Choice";
 import whiteTickIcon from "../assets/icons/whiteTick.svg";
 import errorIcon from "../assets/icons/error.svg";
 import { dreamVenues } from "../data/venueData";
+import { SelectedVenuesContext } from "../contexts/SelectedVenuesContext";
 
 function AboutYourDream() {
+  const { selectedVenues, setSelectedVenues } = useContext(
+    SelectedVenuesContext
+  );
+
+  console.log(selectedVenues);
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [message, setMessage] = useState("");
-  const [selectedVenues, setSelectedVenues] = useState([]);
 
   useEffect(() => {
     const numSelected = selectedChoices.length;
@@ -25,7 +30,7 @@ function AboutYourDream() {
       selectedChoices.includes(venue.choice)
     );
     setSelectedVenues(venues);
-  }, [selectedChoices]);
+  }, [selectedChoices, setSelectedVenues]);
 
   const handleChoiceChange = (choice) => {
     if (selectedChoices.includes(choice)) {

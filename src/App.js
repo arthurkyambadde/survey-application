@@ -2,12 +2,11 @@
 import React from "react";
 import AboutYourDream from "./components/AboutYourDream";
 import Controls from "./components/controls/Controls";
-import Hero from "./components/Hero";
-import PixiePoint from "./components/PixiePoint";
+import SelectedVenue from "./components/selectedVenue/SelectedVenue";
+import { SelectedVenuesProvider } from "./contexts/SelectedVenuesContext";
+import OnBoarding from "./components/onBoarding/OnBoarding";
 
 const App = () => {
-  window.addEventListener("wheel", handleWheel, { passive: false });
-
   function handleWheel(event) {
     event.preventDefault();
 
@@ -20,21 +19,33 @@ const App = () => {
         ? Math.min(maxScrollPosition - scrollPosition, windowHeight)
         : Math.max(-scrollPosition, -windowHeight);
 
-    window.scrollBy({
-      top: scrollAmount,
-      behavior: "smooth",
-    });
+    if (scrollAmount !== 0) {
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+
+      const scrollTarget =
+        scrollPosition + (scrollAmount > 0 ? windowHeight : -windowHeight);
+      const scrollOptions = {
+        top: scrollTarget,
+        behavior: "smooth",
+      };
+      window.scrollTo(scrollOptions);
+    }
   }
 
+  window.addEventListener("wheel", handleWheel, { passive: false });
+
   return (
-    <div>
-      <Controls />
-      <div className="w-screen h-auto flex flex-col bg-primary ">
-        <Hero />
-        <PixiePoint />
-        <AboutYourDream />
+    <SelectedVenuesProvider>
+      <div>
+        <Controls />
+        <div className="w-screen h-auto flex flex-col bg-primary ">
+          <OnBoarding />
+          <AboutYourDream />
+          <SelectedVenue />
+        </div>
       </div>
-    </div>
+    </SelectedVenuesProvider>
   );
 };
 
