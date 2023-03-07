@@ -3,10 +3,10 @@ import React, { createContext } from "react";
 import AboutYourDream from "./components/AboutYourDream";
 import Controls from "./components/controls/Controls";
 import Exercise from "./components/exercise/Excercise";
-import SelectedVenue from "./components/selectedVenue/SelectedVenue";
 import { VenuesProvider } from "./contexts/SelectedVenuesContext";
 import { ONBOARDING_DATA, EXERCISE_DATA } from "./data/Screens";
 import { Instructions, VideoIntroduction } from "./screens/onboarding";
+import { VenueSelection } from "./screens/question";
 
 export const ScrollContext = createContext(null);
 
@@ -61,19 +61,7 @@ const App = () => {
           <div className="w-screen h-auto flex flex-col bg-primary ">
             <VideoIntroduction {...ONBOARDING_DATA.introduction} />
             <Instructions {...ONBOARDING_DATA.instructions} />
-            {exerciseData.map((item) => {
-              return (
-                <Exercise
-                  id={item.id}
-                  title={item.title}
-                  key={item.id}
-                  instruction={item.instruction}
-                  answers={item.answers}
-                  image={item.image}
-                />
-              );
-            })}
-            <SelectedVenue />
+            <VenueSelection />
           </div>
         </div>
       </VenuesProvider>
