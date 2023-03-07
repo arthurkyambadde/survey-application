@@ -1,5 +1,6 @@
 import React from "react";
 import PrimaryButton from "./PrimaryButton";
+import enterIcon from "../../assets/icons/enterIcon.svg";
 
 export function Submit() {
   return (

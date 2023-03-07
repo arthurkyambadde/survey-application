@@ -4,7 +4,8 @@ import AboutYourDream from "./components/AboutYourDream";
 import Controls from "./components/controls/Controls";
 import SelectedVenue from "./components/selectedVenue/SelectedVenue";
 import { SelectedVenuesProvider } from "./contexts/SelectedVenuesContext";
-import OnBoarding from "./components/onBoarding/OnBoarding";
+import { ONBOARDING_DATA } from "./data/Screens";
+import { Instructions, VideoIntroduction } from "./screens/onboarding";
 
 export const ScrollContext = createContext(null);
 
@@ -55,7 +56,8 @@ const App = () => {
         <div>
           <Controls />
           <div className="w-screen h-auto flex flex-col bg-primary ">
-            <OnBoarding />
+            <VideoIntroduction {...ONBOARDING_DATA.introduction} />
+            <Instructions {...ONBOARDING_DATA.instructions} />
             <AboutYourDream />
             <SelectedVenue />
           </div>
