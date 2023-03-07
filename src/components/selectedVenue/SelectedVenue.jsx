@@ -7,6 +7,7 @@ import PageNavigationReminder from "./PageNavigationReminder";
 import AppointMent from "../talkDates/AppointMent";
 import DateAvailability from "../talkDates/DateAvailability";
 import SelectDate from "./SelectDate";
+import Notes from "./Notes";
 
 function SelectedVenue() {
   const { selectedVenues } = useContext(SelectedVenuesContext);
@@ -54,6 +55,7 @@ function SelectedVenue() {
       <AppointMent />
       <DateAvailability />
       <SelectDate />
+      <Notes />
       <section className="h-screen w-screen flex items-center justify-center">
         <p>Thank you for completing the Venue Ranker!</p>
       </section>

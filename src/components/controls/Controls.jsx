@@ -1,16 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import upArrow from "../../assets/icons/upArrow.svg";
 import downArrow from "../../assets/icons/downArrow.svg";
 
-function Controls() {
-  const scrollDown = () => {
-    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
-  };
+import { ScrollContext } from "../../App";
 
-  const scrollUp = () => {
-    window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
-  };
+function Controls() {
+  const { scrollDown, scrollUp } = useContext(ScrollContext);
 
   return (
     <div className="fixed flex bottom-8 right-8 gap-0.5">

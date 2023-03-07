@@ -4,11 +4,14 @@ import whiteTickIcon from "../assets/icons/whiteTick.svg";
 import errorIcon from "../assets/icons/error.svg";
 import { dreamVenues } from "../data/venueData";
 import { SelectedVenuesContext } from "../contexts/SelectedVenuesContext";
+import { ScrollContext } from "../App";
 
 function AboutYourDream() {
   const { selectedVenues, setSelectedVenues } = useContext(
     SelectedVenuesContext
   );
+
+  const { scrollDown } = useContext(ScrollContext);
 
   console.log(selectedVenues);
   const [selectedChoices, setSelectedChoices] = useState([]);
@@ -75,7 +78,7 @@ function AboutYourDream() {
         <div className="w-64 flex flex-col gap-2">{choiceLists}</div>
         <button
           className="py-2 px-2  mt-4 gap-2 rounded bg-primarybtn flex align-middle justify-between text-white w-[80px]"
-          onClick={handleOkClick}
+          onClick={scrollDown}
         >
           <span className="text-white  font-medium ">OK</span>
           <img src={whiteTickIcon} alt="white tick" className="h-6 w-6" />
