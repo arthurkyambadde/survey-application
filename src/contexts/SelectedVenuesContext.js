@@ -1,15 +1,13 @@
 import React, { createContext, useState } from "react";
 
-export const SelectedVenuesContext = createContext();
+export const VenuesContext = createContext();
 
-export const SelectedVenuesProvider = ({ children }) => {
+export const VenuesProvider = ({ children }) => {
   const [selectedVenues, setSelectedVenues] = useState([]);
 
   return (
-    <SelectedVenuesContext.Provider
-      value={{ selectedVenues, setSelectedVenues }}
-    >
+    <VenuesContext.Provider value={{ selectedVenues, setSelectedVenues }}>
       {children}
-    </SelectedVenuesContext.Provider>
+    </VenuesContext.Provider>
   );
 };

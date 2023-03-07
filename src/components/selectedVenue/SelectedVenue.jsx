@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { SelectedVenuesContext } from "../../contexts/SelectedVenuesContext";
+import { VenuesContext } from "../../contexts/SelectedVenuesContext";
 import SubOptionChoice from "../choice/SubOptionChoice";
 import Option from "./Option";
 import whiteTickIcon from "../../assets/icons/whiteTick.svg";
@@ -10,7 +10,7 @@ import SelectDate from "./SelectDate";
 import Notes from "./Notes";
 
 function SelectedVenue() {
-  const { selectedVenues } = useContext(SelectedVenuesContext);
+  const { selectedVenues } = useContext(VenuesContext);
 
   const venueList = selectedVenues.map((item) => {
     const subOptions = item.subOptions;
