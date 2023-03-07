@@ -4,13 +4,16 @@ import { Question } from "../../../components/question/Question";
 import { useVenue } from "../../../hooks/useVenue";
 import { STEP_1_QUESTION } from "../../../data/Screens";
 
-export function VenueSelection({ title, subtitle, options, image, type }) {
-  const { selectedVenues, toggleSelectedVenue } = useVenue();
+export function VenueSelection() {
+  const { selectedVenues, toggleSelectedVenue, hasError } = useVenue();
   return (
     <Question
       selectedValues={selectedVenues}
       onMakeSelection={toggleSelectedVenue}
       title={STEP_1_QUESTION.title}
+      showError={hasError}
+      type={STEP_1_QUESTION.answers.type}
+      options={STEP_1_QUESTION.answers.choices}
     />
   );
 }

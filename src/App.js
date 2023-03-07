@@ -51,7 +51,7 @@ const App = () => {
     window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
   };
 
-  const exerciseData = EXERCISE_DATA.questions;
+  // const exerciseData = EXERCISE_DATA.questions;
 
   return (
     <ScrollContext.Provider value={{ scrollDown, scrollUp }}>

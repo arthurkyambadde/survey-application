@@ -16,5 +16,6 @@ export function useVenue() {
   return {
     selectedVenues,
     toggleSelectedVenue,
+    hasError,
   };
 }

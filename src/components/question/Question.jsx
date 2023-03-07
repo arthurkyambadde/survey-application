@@ -22,6 +22,7 @@ export function Question({
           {options.map((option) => (
             <Choice
               key={option.id}
+              id={option.id}
               onChange={() => onMakeSelection(option.id)}
               type={type}
               label={option.text}
@@ -29,7 +30,7 @@ export function Question({
             />
           ))}
         </div>
-        <Confirm />
+        {!showError && <Confirm />}
         <Error text={errorText} visible={showError} />
       </div>
       <div className="w-1/2 flex align-middle justify-center"> image</div>
