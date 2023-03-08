@@ -44,7 +44,7 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
-        headingColor: "#2e2e2e",
+        headerbg: "rgba(230, 230, 230, 0.9)",
         textColor: "#515151",
         errorColor: "rgb(175, 4, 4)",
         erroBg: "rgb(247, 230, 230)",

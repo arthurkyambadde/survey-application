@@ -17,9 +17,15 @@ export function Question({
   selectedValue,
   attachment,
   superId,
+  venueTitle,
 }) {
   return (
-    <section className="h-screen w-screen flex items-center justify-center">
+    <section className="h-screen w-screen flex items-center justify-center relative">
+      {type === "single_select" && (
+        <div className="absolute top-0 w-full h-14 text-2xl bg-headerbg flex items-center justify-center">
+          {venueTitle}
+        </div>
+      )}
       <div className="w-1/2 p-24 h-auto flex flex-col justify-between">
         <p className="text-2xl mb-6">{title}</p>
         {subtitle && <p className="text-sm text-primarybtn">{subtitle}</p>}

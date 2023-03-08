@@ -26,6 +26,7 @@ export function VenueRating() {
                 setPlaceRating(item, placeId, answer);
               }}
               placeRatings={venueRating[item]}
+              venueTitle={venue.title}
             />
           </React.Fragment>
         );
