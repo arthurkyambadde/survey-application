@@ -13,6 +13,15 @@ export const ONBOARDING_DATA = {
   },
 };
 
+const questionIds = {
+  A: ulid(),
+  B: ulid(),
+  C: ulid(),
+  D: ulid(),
+  E: ulid(),
+  F: ulid(),
+};
+
 export const STEP_1_QUESTION = {
   id: ulid(),
   title: "Tell us about your dream venue!",
@@ -20,12 +29,12 @@ export const STEP_1_QUESTION = {
   answers: {
     type: "multi_select",
     choices: [
-      { id: ulid(), label: "A", text: "Gordon Greenery" },
-      { id: ulid(), label: "B", text: "Desert dream" },
-      { id: ulid(), label: "C", text: "Distinctily arizona" },
-      { id: ulid(), label: "D", text: "Industrial" },
-      { id: ulid(), labe: "E", text: "Modern" },
-      { id: ulid(), label: "F", text: "Rustic yet Chic" },
+      { id: questionIds["A"], label: "A", text: "Gordon Greenery" },
+      { id: questionIds["B"], label: "B", text: "Desert dream" },
+      { id: questionIds["C"], label: "C", text: "Distinctily arizona" },
+      { id: questionIds["D"], label: "D", text: "Industrial" },
+      { id: questionIds["E"], labe: "E", text: "Modern" },
+      { id: questionIds["F"], label: "F", text: "Rustic yet Chic" },
     ],
   },
   image: `../url/to/img.jp`,
@@ -42,7 +51,7 @@ export const STEP_2_QUESTIONS = {
   type: "single_select",
   choices: RATINGS,
 
-  A: {
+  [questionIds["A"]]: {
     instructions: {
       title: "Garden Greenery",
       subtitle:
@@ -123,7 +132,7 @@ export const STEP_2_QUESTIONS = {
       },
     ],
   },
-  B: {
+  [questionIds["B"]]: {
     instructions: {
       title: "Desert drean",
       subtitle:
@@ -139,7 +148,7 @@ export const STEP_2_QUESTIONS = {
       { id: ulid(), label: "02", text: "Desert Foothills" },
     ],
   },
-  C: {
+  [questionIds["C"]]: {
     instructions: {
       title: "Distinctily arizona",
       subtitle: "The definition of the Southwest's history and present!",
@@ -161,7 +170,7 @@ export const STEP_2_QUESTIONS = {
       { id: ulid(), label: "09", text: "The Rubi House" },
     ],
   },
-  D: {
+  [questionIds["D"]]: {
     instructions: {
       title: "Industrial",
       subtitle: "Clean, classic, and perfectly pulled together!",
@@ -176,7 +185,7 @@ export const STEP_2_QUESTIONS = {
       { id: ulid(), label: "02", text: "Fabric" },
     ],
   },
-  E: {
+  [questionIds["E"]]: {
     instructions: {
       title: "Modern",
       subtitle: "Fun, sleek, and cool!",
@@ -192,7 +201,7 @@ export const STEP_2_QUESTIONS = {
       { id: ulid(), label: "03", text: "Hotel Valley Ho" },
     ],
   },
-  F: {
+  [questionIds["F"]]: {
     instructions: {
       title: "Modern",
       subtitle: "Fun, sleek, and cool!",
@@ -212,10 +221,10 @@ export const STEP_2_QUESTIONS = {
 };
 
 export const INITIAL_PLACES_RANKING = {
-  A: {},
-  B: {},
-  C: {},
-  D: {},
-  E: {},
-  F: {},
+  [questionIds["A"]]: {},
+  [questionIds["B"]]: {},
+  [questionIds["C"]]: {},
+  [questionIds["D"]]: {},
+  [questionIds["E"]]: {},
+  [questionIds["F"]]: {},
 };

@@ -17,6 +17,7 @@ export function PlaceRating({ places, onRatePlace, placeRatings }) {
             options={STEP_2_QUESTIONS.choices}
             onMakeSelection={(answerId) => onRatePlace(place.id, answerId)}
             selectedValue={placeRatings[place.id]}
+            superId={place.id}
           />
         );
       })}

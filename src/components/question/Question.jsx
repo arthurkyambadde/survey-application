@@ -16,6 +16,7 @@ export function Question({
   selectedValues,
   selectedValue,
   attachment,
+  superId,
 }) {
   return (
     <section className="h-screen w-screen flex items-center justify-center">
@@ -30,14 +31,17 @@ export function Question({
             return (
               <Choice
                 key={option.id}
-                id={option.id}
+                id={superId ? superId + ":" + option.id : option.id}
                 onChange={() => onMakeSelection(option.id)}
                 type={type}
                 label={option.text}
                 listId={option.label}
-                selectedValues={selectedValues}
-                selectedValue={selectedValue}
                 name={id}
+                isChecked={
+                  type === "multi_select"
+                    ? selectedValues.includes(option.id)
+                    : selectedValue === option.id
+                }
               />
             );
           })}

@@ -6,12 +6,10 @@ export default function Radio({
   id,
   onChange,
   label,
-  selectedValue,
   name,
   listId,
+  isChecked,
 }) {
-  //
-  const isChecked = selectedValue === id;
   const borderStyle = isChecked ? "border-4" : "border-2";
 
   return (
