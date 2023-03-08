@@ -2,8 +2,13 @@ import { useContext } from "react";
 import { VenuesContext } from "../contexts/SelectedVenuesContext";
 
 export function useVenue() {
-  const { selectedVenues, setSelectedVenues, hasError } =
-    useContext(VenuesContext);
+  const {
+    selectedVenues,
+    setSelectedVenues,
+    hasError,
+    venueRating,
+    setVenueRating,
+  } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
     if (selectedVenues.includes(id)) {
@@ -13,9 +18,18 @@ export function useVenue() {
     }
   };
 
+  const setPlaceRating = (venueId, placeId, answerId) => {
+    const clone = { ...venueRating };
+    clone[venueId][placeId] = answerId;
+
+    setVenueRating(clone);
+  };
+
   return {
     selectedVenues,
     toggleSelectedVenue,
     hasError,
+    setPlaceRating,
+    venueRating,
   };
 }
