@@ -1,15 +1,18 @@
 import React, { useEffect } from "react";
 import { Submit } from "../../../components/buttons/Submit";
 import { useInView } from "react-intersection-observer";
+import { useVenue } from "../../../hooks/useVenue";
 
 export function Instructions({ title, subtitle, text, image, id }) {
   const { ref, inView: myElementIsVisible } = useInView({
     threshold: 0.2,
   });
 
+  const { setSection } = useVenue();
+
   useEffect(() => {
     if (myElementIsVisible) {
-      console.log(`now showing question with id:: ${id}`);
+      setSection(id);
     }
   }, [myElementIsVisible]);
 

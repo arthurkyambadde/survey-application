@@ -3,6 +3,7 @@ import Confirm from "../buttons/Confirm";
 import Choice from "../choice/Choice";
 import Error from "../error/Error";
 import { useInView } from "react-intersection-observer";
+import { useVenue } from "../../hooks/useVenue";
 
 export function Question({
   id,
@@ -23,10 +24,11 @@ export function Question({
   const { ref, inView: myElementIsVisible } = useInView({
     threshold: 0.2,
   });
+  const { setQuestion } = useVenue();
 
   useEffect(() => {
     if (myElementIsVisible) {
-      console.log(`now showing question with id:: ${id}`);
+      setQuestion(id);
     }
   }, [myElementIsVisible]);
 

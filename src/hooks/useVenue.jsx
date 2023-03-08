@@ -8,7 +8,7 @@ export function useVenue() {
     hasError,
     venueRating,
     setVenueRating,
-    setSection,
+    setSection: _setSection,
     setQuestion,
   } = useContext(VenuesContext);
 
@@ -18,6 +18,11 @@ export function useVenue() {
     } else {
       setSelectedVenues([...selectedVenues, id]);
     }
+  };
+
+  const setSection = (id) => {
+    setQuestion(null);
+    _setSection(id);
   };
 
   const setPlaceRating = (venueId, placeId, answerId) => {
