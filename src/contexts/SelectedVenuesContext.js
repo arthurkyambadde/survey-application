@@ -11,14 +11,14 @@ export const VenuesProvider = ({ children }) => {
   const [hasError, setHasError] = useState(false);
   const [venueRating, setVenueRating] = useState(INITIAL_PLACES_RANKING);
   const [section, setSection] = useState("onboarding");
-  const [question, setQuestion] = useState(null);
+  const [question, setQuestion] = useState("");
 
   useEffect(() => {
     window.addEventListener("wheel", tryNavigation, { passive: false });
     return () => {
       window.removeEventListener("wheel", tryNavigation, { passive: false });
     };
-  }, []);
+  }, [tryNavigation]);
 
   function tryNavigation(event) {
     event.preventDefault();
@@ -35,6 +35,17 @@ export const VenuesProvider = ({ children }) => {
     if (scrollAmount !== 0) {
       event.stopPropagation();
       event.stopImmediatePropagation();
+
+      if (question === "__select_venue__" && scrollAmount > 0) {
+        console.log("trying to scroll down on the select venue");
+        // check that venue has been selected before going forward
+        if (selectedVenues.length < 2) {
+          setHasError(true);
+          return false;
+        }
+      } else {
+        console.log(`The current question is:: ${question}`);
+      }
 
       const scrollTarget =
         scrollPosition + (scrollAmount > 0 ? windowHeight : -windowHeight);
@@ -56,7 +67,9 @@ export const VenuesProvider = ({ children }) => {
         setHasError,
         venueRating,
         setVenueRating,
+        section,
         setSection,
+        question,
         setQuestion,
       }}
     >
