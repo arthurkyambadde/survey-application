@@ -9,11 +9,12 @@ export function PlaceRating({ places }) {
         return (
           <Question
             key={place.id}
+            id={place.text}
             title={place.text}
             attachment={place.attachment}
+            description={place.description}
             type={STEP_2_QUESTIONS.type}
-            options={places}
-            multipleChoices={STEP_2_QUESTIONS.choices}
+            options={STEP_2_QUESTIONS.choices}
           />
         );
       })}

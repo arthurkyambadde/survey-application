@@ -2,9 +2,9 @@ import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
 
-export default function Radio({ id, onChange, label, selectedValues, name }) {
+export default function Radio({ id, onChange, label, selectedValue, name }) {
   //
-  const isChecked = selectedValues.includes(id);
+  const isChecked = selectedValue === id;
   const borderStyle = isChecked ? "border-4" : "border-2";
 
   return (
@@ -15,7 +15,7 @@ export default function Radio({ id, onChange, label, selectedValues, name }) {
         type="radio"
         id={id}
         className="hidden w-full h-full"
-        checked={selectedValues.includes(id)}
+        checked={isChecked}
         onChange={onChange}
         name={name}
       />

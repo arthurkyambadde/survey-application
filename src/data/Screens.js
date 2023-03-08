@@ -32,15 +32,15 @@ export const STEP_1_QUESTION = {
 const RATINGS = [
   {
     id: "A",
-    label: "My Favourites",
+    text: "My Favourites",
   },
   {
     id: "B",
-    label: "This could work",
+    text: "This could work",
   },
   {
     id: "C",
-    label: "Not for me",
+    text: "Not for me",
   },
 ];
 

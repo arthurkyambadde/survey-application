@@ -4,6 +4,7 @@ import Choice from "../choice/Choice";
 import Error from "../error/Error";
 
 export function Question({
+  id,
   title,
   errorText,
   showError,
@@ -13,8 +14,8 @@ export function Question({
   type,
   onMakeSelection,
   selectedValues,
+  selectedValue,
   attachment,
-  multipleChoices,
 }) {
   return (
     <section className="h-screen w-screen flex items-center justify-center">
@@ -34,7 +35,8 @@ export function Question({
                 type={type}
                 label={option.text}
                 selectedValues={selectedValues}
-                multipleChoices={multipleChoices}
+                selectedValue={selectedValue}
+                name={id}
               />
             );
           })}
