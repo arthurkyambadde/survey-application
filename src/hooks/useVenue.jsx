@@ -8,7 +8,7 @@ export function useVenue() {
     hasError,
     venueRating,
     setVenueRating,
-    setSection,
+    setSection: _setSection,
     setQuestion,
     setHasError,
   } = useContext(VenuesContext);
@@ -28,10 +28,10 @@ export function useVenue() {
     setSelectedVenues(newArr);
   };
 
-  // const setSection = (id) => {
-  //   setQuestion(null);
-  //   _setSection(id);
-  // };
+  const setSection = (id) => {
+    setQuestion(null);
+    _setSection(id);
+  };
 
   const setPlaceRating = (venueId, placeId, answerId) => {
     const clone = { ...venueRating };
