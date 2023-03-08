@@ -60,6 +60,26 @@ export const VenuesProvider = ({ children }) => {
     return false;
   }
 
+  const scrollDown = () => {
+    if (question === "__select_venue__") {
+      // check that venue has been selected before going forward
+      if (selectedVenues.length < 2) {
+        setHasError(true);
+        return false;
+      }
+    } else if (question) {
+      if (!venueRating[section][question]) {
+        setHasError(true);
+        return false;
+      }
+    }
+    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
+  };
+
+  const scrollUp = () => {
+    window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
+  };
+
   return (
     <VenuesContext.Provider
       value={{
@@ -73,6 +93,8 @@ export const VenuesProvider = ({ children }) => {
         setSection,
         question,
         setQuestion,
+        scrollDown,
+        scrollUp,
       }}
     >
       {children}

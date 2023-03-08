@@ -11,6 +11,8 @@ export function useVenue() {
     setSection: _setSection,
     setQuestion,
     setHasError,
+    scrollDown,
+    scrollUp,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
@@ -51,5 +53,7 @@ export function useVenue() {
     venueRating,
     setSection,
     setQuestion,
+    scrollDown,
+    scrollUp,
   };
 }

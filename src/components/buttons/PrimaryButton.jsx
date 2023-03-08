@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { ScrollContext } from "../../App";
+import React from "react";
+import { useVenue } from "../../hooks/useVenue";
 
 function PrimaryButton(props) {
-  const { scrollDown } = useContext(ScrollContext);
+  const { scrollDown } = useVenue();
 
   const { buttonText } = props;
 

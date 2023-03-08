@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import whiteTickIcon from "../../assets/icons/whiteTick.svg";
-import { ScrollContext } from "../../App";
+import { useVenue } from "../../hooks/useVenue";
 
 export default function Confirm() {
   //
-  const { scrollDown, scrollUp } = useContext(ScrollContext);
+  const { scrollDown } = useVenue();
 
   return (
     <button
