@@ -6,6 +6,7 @@ import { STEP_1_QUESTION } from "../../../data/Screens";
 
 export function VenueSelection() {
   const { selectedVenues, toggleSelectedVenue, hasError } = useVenue();
+
   return (
     <Question
       selectedValues={selectedVenues}

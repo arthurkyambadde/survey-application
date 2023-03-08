@@ -1,5 +1,4 @@
 import React from "react";
-import tickIcon from "../../assets/icons/tick.svg";
 import CheckBox from "../inputs/CheckBox";
 import Radio from "../inputs/Radio";
 

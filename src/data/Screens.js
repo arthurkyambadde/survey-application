@@ -48,6 +48,7 @@ const RATINGS = [
 export const STEP_2_QUESTIONS = {
   type: "single_select",
   choices: RATINGS,
+
   A: {
     instructions: {
       title: "Garden Greenery",
@@ -56,12 +57,71 @@ export const STEP_2_QUESTIONS = {
       image: "../url/to/image.jpg",
     },
     places: [
-      { id: "01", text: "The Japanese Freindship Garden" },
-      { id: "02", text: "The Windmill Winery - Lake House" },
-      { id: "03", text: "Schnep's Farm - Meadow" },
-      { id: "04", text: "Tubac Golf Course and Resort" },
-      { id: "05", text: "Verrado Golf Club" },
-      { id: "06", text: "Encanterra Golf Club" },
+      {
+        id: "01",
+        text: "The Japanese Freindship Garden",
+        description: "",
+
+        attachment: {
+          text: "Download_Venue Specific Details",
+          link: "../to/download Url/of the attachment",
+        },
+      },
+      {
+        id: "02",
+        text: "The Windmill Winery - Lake House",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "../to/download Url/of the attachment",
+        },
+      },
+      {
+        id: "03",
+        text: "Schnep's Farm - Meadow",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "../to/download Url/of the attachment",
+        },
+      },
+      {
+        id: "04",
+        text: "Tubac Golf Course and Resort",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "../to/download Url/of the attachment",
+        },
+      },
+      {
+        id: "05",
+        text: "Verrado Golf Club",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "../to/download Url/of the attachment",
+        },
+      },
+      {
+        id: "06",
+        text: "Encanterra Golf Club",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "../to/download Url/of the attachment",
+        },
+      },
     ],
   },
   B: {
@@ -70,6 +130,10 @@ export const STEP_2_QUESTIONS = {
       subtitle:
         "Perfectly pristine desert landscaping and authentic desert backdrops!",
       image: "../url/to/image.jpg",
+    },
+    attachment: {
+      text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+      link: "../to/download Url/of the attachment",
     },
     places: [
       { id: "01", text: "The Paseo" },
@@ -81,6 +145,10 @@ export const STEP_2_QUESTIONS = {
       title: "Distinctily arizona",
       subtitle: "The definition of the Southwest's history and present!",
       image: "../url/to/image.jpg",
+    },
+    attachment: {
+      text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+      link: "../to/download Url/of the attachment",
     },
     places: [
       { id: "01", text: "Schnep's Farm - Farm House" },
@@ -100,6 +168,10 @@ export const STEP_2_QUESTIONS = {
       subtitle: "Clean, classic, and perfectly pulled together!",
       image: "../url/to/image.jpg",
     },
+    attachment: {
+      text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+      link: "../to/download Url/of the attachment",
+    },
     places: [
       { id: "01", text: "Sunkist" },
       { id: "02", text: "Fabric" },
@@ -110,6 +182,10 @@ export const STEP_2_QUESTIONS = {
       title: "Modern",
       subtitle: "Fun, sleek, and cool!",
       image: "../url/to/image.jpg",
+    },
+    attachment: {
+      text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+      link: "../to/download Url/of the attachment",
     },
     places: [
       { id: "01", text: "Juncture PHX" },
@@ -122,6 +198,10 @@ export const STEP_2_QUESTIONS = {
       title: "Modern",
       subtitle: "Fun, sleek, and cool!",
       image: "../url/to/image.jpg",
+    },
+    attachment: {
+      text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+      link: "../to/download Url/of the attachment",
     },
     places: [
       { id: "01", text: "The Windmill Winery - Big Red Barn" },

@@ -1,53 +1,40 @@
-import React, { useState, useContext } from "react";
-import { ScrollContext } from "../../App";
+import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
 
-export default function Radio() {
+export default function Radio({ id, onChange, label, selectedValues, name }) {
   //
-  const [selectedOption, setSelectedOption] = useState("");
-  const { scrollDown } = useContext(ScrollContext);
-
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-
-  const options = [
-    {
-      id: "A",
-      label: "My Favourites",
-    },
-    {
-      id: "B",
-      label: "This could work",
-    },
-    {
-      id: "C",
-      label: "Not for me",
-    },
-  ];
+  const isChecked = selectedValues.includes(id);
+  const borderStyle = isChecked ? "border-4" : "border-2";
 
   return (
-    <div div className="w-[30px]" onClick={scrollDown}>
-      {options.map((option) => (
-        <Label key={option.id} id={option.id}>
-          <input
-            type="radio"
-            name="options"
-            value={option.id}
-            checked={selectedOption === option.id}
-            onChange={handleOptionChange}
-            className="hidden"
-          />
-          <span className="w-7 h-7 rounded border bg-white border-primarybtn flex items-center justify-center">
-            {option.id}
+    <div
+      className={`bg-checkboxBg hover:bg-checkboxHoverBg cursor-pointer flex py-0.25 px-2 py-2 rounded w-full border-primarybtn  ${borderStyle}`}
+    >
+      <input
+        type="radio"
+        id={id}
+        className="hidden w-full h-full"
+        checked={selectedValues.includes(id)}
+        onChange={onChange}
+        name={name}
+      />
+      <Label id={id}>
+        <div className="flex gap-1">
+          <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
+            {id}
           </span>
-          <span>{option.label}</span>
-          {selectedOption === option.id && (
-            <img src={tickIcon} alt="tick" className="h-6 w-6" />
-          )}
-        </Label>
-      ))}
+          <span className="mr-2 flex justify-center items-center">{label}</span>
+        </div>
+        {isChecked && (
+          <img
+            src={tickIcon}
+            alt="tick"
+            id="checkboxTick"
+            className="w-6 h-6"
+          />
+        )}
+      </Label>
     </div>
   );
 }

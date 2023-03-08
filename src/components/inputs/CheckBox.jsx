@@ -2,9 +2,9 @@ import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
 
-export default function CheckBox({ id, isChecked, onChange, label }) {
+export default function CheckBox({ id, onChange, label, selectedValues }) {
   //
-
+  const isChecked = selectedValues.includes(id);
   const borderStyle = isChecked ? "border-4" : "border-2";
 
   return (
@@ -15,7 +15,7 @@ export default function CheckBox({ id, isChecked, onChange, label }) {
         type="checkbox"
         id={id}
         className="hidden w-full h-full"
-        checked={isChecked}
+        checked={selectedValues.includes(id)}
         onChange={onChange}
       />
       <Label id={id}>
