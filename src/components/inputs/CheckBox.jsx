@@ -13,12 +13,12 @@ export default function CheckBox({ id, onChange, label, selectedValues }) {
     >
       <input
         type="checkbox"
-        id={id}
+        id={label}
         className="hidden w-full h-full"
         checked={selectedValues.includes(id)}
         onChange={onChange}
       />
-      <Label id={id}>
+      <Label id={label}>
         <div className="flex gap-1">
           <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
             {id}

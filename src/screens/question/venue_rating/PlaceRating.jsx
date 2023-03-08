@@ -2,7 +2,7 @@ import React from "react";
 import { Question } from "../../../components/question/Question";
 import { STEP_2_QUESTIONS } from "../../../data/Screens";
 
-export function PlaceRating({ places }) {
+export function PlaceRating({ places, onRatePlace, placeRatings }) {
   return (
     <>
       {places.map((place) => {
@@ -15,6 +15,8 @@ export function PlaceRating({ places }) {
             description={place.description}
             type={STEP_2_QUESTIONS.type}
             options={STEP_2_QUESTIONS.choices}
+            onMakeSelection={(answerId) => onRatePlace(place.id, answerId)}
+            selectedValue={placeRatings[place.id]}
           />
         );
       })}

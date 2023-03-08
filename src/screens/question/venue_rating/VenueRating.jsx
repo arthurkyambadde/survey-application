@@ -6,7 +6,7 @@ import { PlaceRating } from "./PlaceRating";
 
 export function VenueRating() {
   //
-  const { selectedVenues } = useVenue();
+  const { selectedVenues, venueRating, setPlaceRating } = useVenue();
 
   return (
     <div>
@@ -20,7 +20,16 @@ export function VenueRating() {
               subtitle={venue.subtitle}
               image={venue.image}
             />
-            <PlaceRating places={STEP_2_QUESTIONS[item].places} />
+            <PlaceRating
+              places={STEP_2_QUESTIONS[item].places}
+              onRatePlace={(placeId, answer) => {
+                console.log(
+                  `trying to set venue with id ${item} and place ${placeId} to ${answer}`
+                );
+                setPlaceRating(item, placeId, answer);
+              }}
+              placeRatings={venueRating[item]}
+            />
           </React.Fragment>
         );
       })}

@@ -13,13 +13,14 @@ export default function Radio({ id, onChange, label, selectedValue, name }) {
     >
       <input
         type="radio"
-        id={id}
+        id={label}
         className="hidden w-full h-full"
         checked={isChecked}
         onChange={onChange}
         name={name}
+        value={id}
       />
-      <Label id={id}>
+      <Label id={label}>
         <div className="flex gap-1">
           <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
             {id}

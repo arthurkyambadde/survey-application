@@ -211,3 +211,12 @@ export const STEP_2_QUESTIONS = {
     ],
   },
 };
+
+export const INITIAL_PLACES_RANKING = {
+  A: {},
+  B: {},
+  C: {},
+  D: {},
+  E: {},
+  F: {},
+};
