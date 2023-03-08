@@ -1,3 +1,5 @@
+import { ulid } from "ulid";
+
 export const ONBOARDING_DATA = {
   introduction: {
     title: "The Venue Ranker",
@@ -12,36 +14,27 @@ export const ONBOARDING_DATA = {
 };
 
 export const STEP_1_QUESTION = {
-  id: "1",
+  id: ulid(),
   title: "Tell us about your dream venue!",
   instruction: "You can choose 4 more",
   answers: {
     type: "multi_select",
     choices: [
-      { id: "A", text: "Gordon Greenery" },
-      { id: "B", text: "Desert dream" },
-      { id: "C", text: "Distinctily arizona" },
-      { id: "D", text: "Industrial" },
-      { id: "E", text: "Modern" },
-      { id: "F", text: "Rustic yet Chic" },
+      { id: ulid(), label: "A", text: "Gordon Greenery" },
+      { id: ulid(), label: "B", text: "Desert dream" },
+      { id: ulid(), label: "C", text: "Distinctily arizona" },
+      { id: ulid(), label: "D", text: "Industrial" },
+      { id: ulid(), labe: "E", text: "Modern" },
+      { id: ulid(), label: "F", text: "Rustic yet Chic" },
     ],
   },
   image: `../url/to/img.jp`,
 };
 
 const RATINGS = [
-  {
-    id: "A",
-    text: "My Favourites",
-  },
-  {
-    id: "B",
-    text: "This could work",
-  },
-  {
-    id: "C",
-    text: "Not for me",
-  },
+  { id: ulid(), label: "A", text: "My Favourites" },
+  { id: ulid(), label: "B", text: "This could work" },
+  { id: ulid(), label: "C", text: "Not for me" },
 ];
 
 // These are questions for each venue and they'll be rendered dynamically based off of chosen venue id
@@ -58,7 +51,8 @@ export const STEP_2_QUESTIONS = {
     },
     places: [
       {
-        id: "01",
+        id: ulid(),
+        label: "01",
         text: "The Japanese Freindship Garden",
         description: "",
 
@@ -68,7 +62,8 @@ export const STEP_2_QUESTIONS = {
         },
       },
       {
-        id: "02",
+        id: ulid(),
+        label: "02",
         text: "The Windmill Winery - Lake House",
         description:
           "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
@@ -79,7 +74,8 @@ export const STEP_2_QUESTIONS = {
         },
       },
       {
-        id: "03",
+        id: ulid(),
+        label: "03",
         text: "Schnep's Farm - Meadow",
         description:
           "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
@@ -90,7 +86,8 @@ export const STEP_2_QUESTIONS = {
         },
       },
       {
-        id: "04",
+        id: ulid(),
+        label: "04",
         text: "Tubac Golf Course and Resort",
         description:
           "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
@@ -101,7 +98,8 @@ export const STEP_2_QUESTIONS = {
         },
       },
       {
-        id: "05",
+        id: ulid(),
+        label: "05",
         text: "Verrado Golf Club",
         description:
           "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
@@ -112,7 +110,8 @@ export const STEP_2_QUESTIONS = {
         },
       },
       {
-        id: "06",
+        id: ulid(),
+        label: "06",
         text: "Encanterra Golf Club",
         description:
           "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
@@ -136,8 +135,8 @@ export const STEP_2_QUESTIONS = {
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: "01", text: "The Paseo" },
-      { id: "02", text: "Desert Foothills" },
+      { id: ulid(), label: "01", text: "The Paseo" },
+      { id: ulid(), label: "02", text: "Desert Foothills" },
     ],
   },
   C: {
@@ -151,15 +150,15 @@ export const STEP_2_QUESTIONS = {
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: "01", text: "Schnep's Farm - Farm House" },
-      { id: "02", text: "Hacienda Del Sol" },
-      { id: "03", text: "Tanque Verde - Saguaro Room" },
-      { id: "04", text: "The Historic Bates Mansion" },
-      { id: "05", text: "The Irish Cultural Center" },
-      { id: "06", text: "The Ocotillo" },
-      { id: "07", text: "The Vic" },
-      { id: "08", text: "La Cocina at Encanterra " },
-      { id: "09", text: "The Rubi House" },
+      { id: ulid(), label: "01", text: "Schnep's Farm - Farm House" },
+      { id: ulid(), label: "02", text: "Hacienda Del Sol" },
+      { id: ulid(), label: "03", text: "Tanque Verde - Saguaro Room" },
+      { id: ulid(), label: "04", text: "The Historic Bates Mansion" },
+      { id: ulid(), label: "05", text: "The Irish Cultural Center" },
+      { id: ulid(), label: "06", text: "The Ocotillo" },
+      { id: ulid(), label: "07", text: "The Vic" },
+      { id: ulid(), label: "08", text: "La Cocina at Encanterra " },
+      { id: ulid(), label: "09", text: "The Rubi House" },
     ],
   },
   D: {
@@ -173,8 +172,8 @@ export const STEP_2_QUESTIONS = {
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: "01", text: "Sunkist" },
-      { id: "02", text: "Fabric" },
+      { id: ulid(), label: "01", text: "Sunkist" },
+      { id: ulid(), label: "02", text: "Fabric" },
     ],
   },
   E: {
@@ -188,9 +187,9 @@ export const STEP_2_QUESTIONS = {
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: "01", text: "Juncture PHX" },
-      { id: "02", text: "Soho63" },
-      { id: "03", text: "Hotel Valley Ho" },
+      { id: ulid(), label: "01", text: "Juncture PHX" },
+      { id: ulid(), label: "02", text: "Soho63" },
+      { id: ulid(), label: "03", text: "Hotel Valley Ho" },
     ],
   },
   F: {
@@ -204,10 +203,10 @@ export const STEP_2_QUESTIONS = {
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: "01", text: "The Windmill Winery - Big Red Barn" },
-      { id: "02", text: "Schnep's Farm - Big Red Barn" },
-      { id: "03", text: "Tanque Verde - Big Barn" },
-      { id: "04", text: "Tanque Verde - Cottonwood Grove" },
+      { id: ulid(), label: "01", text: "The Windmill Winery - Big Red Barn" },
+      { id: ulid(), label: "02", text: "Schnep's Farm - Big Red Barn" },
+      { id: ulid(), label: "03", text: "Tanque Verde - Big Barn" },
+      { id: ulid(), label: "04", text: "Tanque Verde - Cottonwood Grove" },
     ],
   },
 };

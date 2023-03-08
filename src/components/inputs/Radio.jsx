@@ -2,7 +2,14 @@ import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
 
-export default function Radio({ id, onChange, label, selectedValue, name }) {
+export default function Radio({
+  id,
+  onChange,
+  label,
+  selectedValue,
+  name,
+  listId,
+}) {
   //
   const isChecked = selectedValue === id;
   const borderStyle = isChecked ? "border-4" : "border-2";
@@ -13,17 +20,17 @@ export default function Radio({ id, onChange, label, selectedValue, name }) {
     >
       <input
         type="radio"
-        id={label}
+        id={id}
         className="hidden w-full h-full"
         checked={isChecked}
         onChange={onChange}
         name={name}
         value={id}
       />
-      <Label id={label}>
+      <Label id={id}>
         <div className="flex gap-1">
           <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
-            {id}
+            {listId}
           </span>
           <span className="mr-2 flex justify-center items-center">{label}</span>
         </div>

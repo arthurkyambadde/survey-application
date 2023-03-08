@@ -34,6 +34,7 @@ export function Question({
                 onChange={() => onMakeSelection(option.id)}
                 type={type}
                 label={option.text}
+                listId={option.label}
                 selectedValues={selectedValues}
                 selectedValue={selectedValue}
                 name={id}

@@ -2,7 +2,13 @@ import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
 
-export default function CheckBox({ id, onChange, label, selectedValues }) {
+export default function CheckBox({
+  id,
+  onChange,
+  label,
+  selectedValues,
+  listId,
+}) {
   //
   const isChecked = selectedValues.includes(id);
   const borderStyle = isChecked ? "border-4" : "border-2";
@@ -13,15 +19,15 @@ export default function CheckBox({ id, onChange, label, selectedValues }) {
     >
       <input
         type="checkbox"
-        id={label}
+        id={id}
         className="hidden w-full h-full"
         checked={selectedValues.includes(id)}
         onChange={onChange}
       />
-      <Label id={label}>
+      <Label id={id}>
         <div className="flex gap-1">
           <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold">
-            {id}
+            {listId}
           </span>
           <span className="mr-2 flex justify-center items-center">{label}</span>
         </div>
