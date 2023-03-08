@@ -16,6 +16,7 @@ export function VenueRating() {
         return (
           <React.Fragment key={item}>
             <Instructions
+              id={item}
               title={venue.title}
               subtitle={venue.subtitle}
               image={venue.image}

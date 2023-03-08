@@ -42,6 +42,11 @@ export const VenuesProvider = ({ children }) => {
           setHasError(true);
           return false;
         }
+      } else if (question && scrollAmount > 0) {
+        if (!venueRating[section][question]) {
+          setHasError(true);
+          return false;
+        }
       }
 
       const scrollTarget =

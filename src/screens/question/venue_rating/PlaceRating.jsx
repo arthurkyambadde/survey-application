@@ -9,7 +9,7 @@ export function PlaceRating({ places, onRatePlace, placeRatings, venueTitle }) {
         return (
           <Question
             key={place.id}
-            id={place.text}
+            id={place.id}
             title={place.text}
             attachment={place.attachment}
             description={place.description}
