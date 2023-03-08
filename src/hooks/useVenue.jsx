@@ -10,14 +10,22 @@ export function useVenue() {
     setVenueRating,
     setSection,
     setQuestion,
+    setHasError,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
+    let newArr = [];
     if (selectedVenues.includes(id)) {
-      setSelectedVenues(selectedVenues.filter((el) => el !== id));
+      newArr = selectedVenues.filter((el) => el !== id);
     } else {
-      setSelectedVenues([...selectedVenues, id]);
+      newArr = [...selectedVenues, id];
     }
+
+    if (newArr.length > 1 && hasError) {
+      setHasError(false);
+    }
+
+    setSelectedVenues(newArr);
   };
 
   // const setSection = (id) => {

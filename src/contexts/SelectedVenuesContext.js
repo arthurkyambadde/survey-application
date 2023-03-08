@@ -37,14 +37,11 @@ export const VenuesProvider = ({ children }) => {
       event.stopImmediatePropagation();
 
       if (question === "__select_venue__" && scrollAmount > 0) {
-        console.log("trying to scroll down on the select venue");
         // check that venue has been selected before going forward
         if (selectedVenues.length < 2) {
           setHasError(true);
           return false;
         }
-      } else {
-        console.log(`The current question is:: ${question}`);
       }
 
       const scrollTarget =
