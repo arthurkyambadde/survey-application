@@ -22,8 +22,6 @@ export function useVenue() {
     const clone = { ...venueRating };
     clone[venueId][placeId] = answerId;
 
-    console.log(clone[venueId]);
-
     setVenueRating(clone);
   };
 

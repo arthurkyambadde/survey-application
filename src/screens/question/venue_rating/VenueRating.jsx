@@ -23,9 +23,6 @@ export function VenueRating() {
             <PlaceRating
               places={STEP_2_QUESTIONS[item].places}
               onRatePlace={(placeId, answer) => {
-                console.log(
-                  `trying to set venue with id ${item} and place ${placeId} to ${answer}`
-                );
                 setPlaceRating(item, placeId, answer);
               }}
               placeRatings={venueRating[item]}
