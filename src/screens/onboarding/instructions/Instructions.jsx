@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Submit } from "../../../components/buttons/Submit";
 import { useInView } from "react-intersection-observer";
 
@@ -7,9 +7,12 @@ export function Instructions({ title, subtitle, text, image, id }) {
     threshold: 0.2,
   });
 
-  if (myElementIsVisible) {
-    console.log(`now showing question with id:: ${id}`);
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      console.log(`now showing question with id:: ${id}`);
+    }
+  }, [myElementIsVisible]);
+
   return (
     <section
       id={id}

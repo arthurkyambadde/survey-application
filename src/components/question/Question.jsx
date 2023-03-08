@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Confirm from "../buttons/Confirm";
 import Choice from "../choice/Choice";
 import Error from "../error/Error";
@@ -24,9 +24,11 @@ export function Question({
     threshold: 0.2,
   });
 
-  if (myElementIsVisible) {
-    console.log(`now showing question with id:: ${id}`);
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      console.log(`now showing question with id:: ${id}`);
+    }
+  }, [myElementIsVisible]);
 
   return (
     <section
