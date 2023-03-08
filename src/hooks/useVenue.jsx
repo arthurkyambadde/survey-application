@@ -38,6 +38,9 @@ export function useVenue() {
     clone[venueId][placeId] = answerId;
 
     setVenueRating(clone);
+    if (hasError) {
+      setHasError(false);
+    }
   };
 
   return {
