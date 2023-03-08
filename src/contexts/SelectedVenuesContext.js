@@ -10,7 +10,8 @@ export const VenuesProvider = ({ children }) => {
   const [selectedVenues, setSelectedVenues] = useState([]);
   const [hasError, setHasError] = useState(false);
   const [venueRating, setVenueRating] = useState(INITIAL_PLACES_RANKING);
-  const [formStep, setFormStep] = useState("onboarding");
+  const [section, setSection] = useState("onboarding");
+  const [question, setQuestion] = useState(null);
 
   useEffect(() => {
     window.addEventListener("wheel", tryNavigation, { passive: false });
@@ -55,6 +56,8 @@ export const VenuesProvider = ({ children }) => {
         setHasError,
         venueRating,
         setVenueRating,
+        setSection,
+        setQuestion,
       }}
     >
       {children}

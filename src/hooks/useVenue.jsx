@@ -8,6 +8,8 @@ export function useVenue() {
     hasError,
     venueRating,
     setVenueRating,
+    setSection,
+    setQuestion,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
@@ -31,5 +33,7 @@ export function useVenue() {
     hasError,
     setPlaceRating,
     venueRating,
+    setSection,
+    setQuestion,
   };
 }
