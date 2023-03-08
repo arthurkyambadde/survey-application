@@ -2,6 +2,7 @@ import React from "react";
 import Confirm from "../buttons/Confirm";
 import Choice from "../choice/Choice";
 import Error from "../error/Error";
+import { useInView } from "react-intersection-observer";
 
 export function Question({
   id,
@@ -19,8 +20,20 @@ export function Question({
   superId,
   venueTitle,
 }) {
+  const { ref, inView: myElementIsVisible } = useInView({
+    threshold: 0.2,
+  });
+
+  if (myElementIsVisible) {
+    console.log(`now showing question with id:: ${id}`);
+  }
+
   return (
-    <section className="h-screen w-screen flex items-center justify-center relative">
+    <section
+      ref={ref}
+      id={id}
+      className="h-screen w-screen flex items-center justify-center relative"
+    >
       {type === "single_select" && (
         <div className="absolute top-0 w-full h-14 text-2xl bg-headerbg flex items-center justify-center">
           {venueTitle}

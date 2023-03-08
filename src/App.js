@@ -13,35 +13,33 @@ export const ScrollContext = createContext(null);
 const App = () => {
   //
 
-  function handleWheel(event) {
-    event.preventDefault();
+  // function handleWheel(event) {
+  //   event.preventDefault();
 
-    const scrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const maxScrollPosition = document.body.scrollHeight - windowHeight;
-    const delta = event.deltaY;
-    const scrollAmount =
-      delta > 0
-        ? Math.min(maxScrollPosition - scrollPosition, windowHeight)
-        : Math.max(-scrollPosition, -windowHeight);
+  //   const scrollPosition = window.scrollY;
+  //   const windowHeight = window.innerHeight;
+  //   const maxScrollPosition = document.body.scrollHeight - windowHeight;
+  //   const delta = event.deltaY;
+  //   const scrollAmount =
+  //     delta > 0
+  //       ? Math.min(maxScrollPosition - scrollPosition, windowHeight)
+  //       : Math.max(-scrollPosition, -windowHeight);
 
-    if (scrollAmount !== 0) {
-      event.stopPropagation();
-      event.stopImmediatePropagation();
+  //   if (scrollAmount !== 0) {
+  //     event.stopPropagation();
+  //     event.stopImmediatePropagation();
 
-      const scrollTarget =
-        scrollPosition + (scrollAmount > 0 ? windowHeight : -windowHeight);
-      const scrollOptions = {
-        top: scrollTarget,
-        behavior: "smooth",
-      };
-      window.scrollTo(scrollOptions);
-    }
-  }
+  //     const scrollTarget =
+  //       scrollPosition + (scrollAmount > 0 ? windowHeight : -windowHeight);
+  //     const scrollOptions = {
+  //       top: scrollTarget,
+  //       behavior: "smooth",
+  //     };
+  //     window.scrollTo(scrollOptions);
+  //   }
+  // }
 
-  window.addEventListener("wheel", handleWheel, { passive: false });
-
-  window.addEventListener("wheel", handleWheel, { passive: false });
+  // window.addEventListener("wheel", handleWheel, { passive: false });
 
   const scrollDown = () => {
     window.scrollBy(0, window.innerHeight); // scroll down by 100vh

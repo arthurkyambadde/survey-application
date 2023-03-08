@@ -9,6 +9,7 @@ export function VenueSelection() {
 
   return (
     <Question
+      id="__select_venue__"
       selectedValues={selectedVenues}
       onMakeSelection={toggleSelectedVenue}
       title={STEP_1_QUESTION.title}
