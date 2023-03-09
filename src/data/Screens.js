@@ -50,6 +50,9 @@ const RATINGS = [
 export const STEP_2_QUESTIONS = {
   type: "single_select",
   choices: RATINGS,
+  controlsIntructions: {
+    text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+  },
 
   [questionIds["A"]]: {
     instructions: {
@@ -57,6 +60,9 @@ export const STEP_2_QUESTIONS = {
       subtitle:
         "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
       image: "../url/to/image.jpg",
+    },
+    controlsIntructions: {
+      text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
     },
     places: [
       {
@@ -68,6 +74,9 @@ export const STEP_2_QUESTIONS = {
         attachment: {
           text: "Download_Venue Specific Details",
           link: "../to/download Url/of the attachment",
+        },
+        controlsIntructions: {
+          text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
         },
       },
       {
@@ -227,4 +236,44 @@ export const INITIAL_PLACES_RANKING = {
   [questionIds["D"]]: {},
   [questionIds["E"]]: {},
   [questionIds["F"]]: {},
+};
+
+export const STEP_3_QUESTIONS = {
+  type: "single_select",
+  introduction: ` Venue availability differs drastically based on the date and day you
+  decide to have your wedding. How flexible are you when it comes to
+  your date?`,
+  subtitle: "Description(Optional)",
+  answers: [
+    {
+      id: ulid(),
+      label: "A",
+
+      choice:
+        "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list.",
+    },
+    {
+      id: ulid(),
+      label: "B",
+      choice:
+        " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday.",
+    },
+    {
+      id: ulid(),
+      label: "C",
+      choice:
+        "We are willing to look at booking a week day date as long as it’s in the same month.",
+    },
+    {
+      id: ulid(),
+      label: "D",
+      choice:
+        "We are flexible on the month and the day if it lets us book our favorite venue.",
+    },
+    {
+      id: ulid(),
+      label: "E",
+      choice: "We haven't settled on a date and we're open to suggestions.",
+    },
+  ],
 };

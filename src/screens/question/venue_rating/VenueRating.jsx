@@ -3,6 +3,7 @@ import { useVenue } from "../../../hooks/useVenue";
 import { STEP_2_QUESTIONS } from "../../../data/Screens";
 import { Instructions } from "../../onboarding";
 import { PlaceRating } from "./PlaceRating";
+import AppointmentIntroduction from "../../appointment/AppointmentIntroduction";
 
 export function VenueRating() {
   //
@@ -12,6 +13,8 @@ export function VenueRating() {
     <div>
       {selectedVenues.map((item) => {
         const venue = STEP_2_QUESTIONS[item].instructions;
+        const controlInstructions = STEP_2_QUESTIONS.controlsIntructions;
+        console.log(controlInstructions, "test");
 
         return (
           <React.Fragment key={item}>
@@ -29,9 +32,11 @@ export function VenueRating() {
               placeRatings={venueRating[item]}
               venueTitle={venue.title}
             />
+            <Instructions id={item} title={controlInstructions.text} />
           </React.Fragment>
         );
       })}
+      <AppointmentIntroduction />
     </div>
   );
 }

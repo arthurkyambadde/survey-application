@@ -12,6 +12,11 @@ export const VenuesProvider = ({ children }) => {
   const [venueRating, setVenueRating] = useState(INITIAL_PLACES_RANKING);
   const [section, setSection] = useState("onboarding");
   const [question, setQuestion] = useState("");
+  const [venueAvailability, setVenueAvailability] = useState(null);
+
+  const handleOptionChange = (event) => {
+    setVenueAvailability(event.target.value);
+  };
 
   useEffect(() => {
     window.addEventListener("wheel", tryNavigation, { passive: false });
@@ -95,6 +100,8 @@ export const VenuesProvider = ({ children }) => {
         setQuestion,
         scrollDown,
         scrollUp,
+        venueAvailability,
+        handleOptionChange,
       }}
     >
       {children}
