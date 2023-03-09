@@ -6,7 +6,7 @@ export function Inquiry({ id, title, subtitle, type, options }) {
   const { venueAvailability, handleOptionChange } = useVenue();
 
   return (
-    <section className="h-screen w-screen flex flex-col items-center justify-center">
+    <form className="h-screen w-screen flex flex-col items-center justify-center">
       <div className="w-[70%]">
         <div>
           <p className="text-2xl mb-6 font-normal">{title}</p>
@@ -31,6 +31,6 @@ export function Inquiry({ id, title, subtitle, type, options }) {
           <p className="text-xl text-primarybtn underline">Add choice</p>
         </div>
       </div>
-    </section>
+    </form>
   );
 }
