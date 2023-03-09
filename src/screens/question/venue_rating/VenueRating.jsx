@@ -4,6 +4,7 @@ import { STEP_2_QUESTIONS } from "../../../data/Screens";
 import { Instructions } from "../../onboarding";
 import { PlaceRating } from "./PlaceRating";
 import AppointmentIntroduction from "../../appointment/AppointmentIntroduction";
+import AppointmentScheduler from "../../appointment/AppointmentScheduler";
 
 export function VenueRating() {
   //
@@ -14,7 +15,6 @@ export function VenueRating() {
       {selectedVenues.map((item) => {
         const venue = STEP_2_QUESTIONS[item].instructions;
         const controlInstructions = STEP_2_QUESTIONS.controlsIntructions;
-        console.log(controlInstructions, "test");
 
         return (
           <React.Fragment key={item}>
@@ -37,6 +37,7 @@ export function VenueRating() {
         );
       })}
       <AppointmentIntroduction />
+      <AppointmentScheduler />
     </div>
   );
 }

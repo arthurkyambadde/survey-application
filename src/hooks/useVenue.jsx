@@ -15,6 +15,12 @@ export function useVenue() {
     scrollUp,
     venueAvailability,
     handleOptionChange,
+    handleDayChange,
+    handleMonthChange,
+    handleYearChange,
+    day,
+    month,
+    year,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
@@ -59,5 +65,11 @@ export function useVenue() {
     scrollUp,
     venueAvailability,
     handleOptionChange,
+    handleDayChange,
+    handleMonthChange,
+    handleYearChange,
+    day,
+    month,
+    year,
   };
 }

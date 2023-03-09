@@ -2,9 +2,6 @@ import React from "react";
 import { Inquiry } from "../../components/question/Inquiry";
 import { STEP_3_QUESTIONS } from "../../data/Screens";
 
-const venueAvailabilityQuestion = STEP_3_QUESTIONS;
-console.log(venueAvailabilityQuestion, "introduction");
-
 function AppointmentIntroduction() {
   return (
     <Inquiry

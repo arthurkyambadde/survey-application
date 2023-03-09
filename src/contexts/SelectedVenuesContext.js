@@ -3,9 +3,6 @@ import { INITIAL_PLACES_RANKING } from "../data/Screens";
 
 export const VenuesContext = createContext();
 
-let currentVenue = null;
-let currentPlace = null;
-
 export const VenuesProvider = ({ children }) => {
   const [selectedVenues, setSelectedVenues] = useState([]);
   const [hasError, setHasError] = useState(false);
@@ -13,6 +10,22 @@ export const VenuesProvider = ({ children }) => {
   const [section, setSection] = useState("onboarding");
   const [question, setQuestion] = useState("");
   const [venueAvailability, setVenueAvailability] = useState(null);
+  const [day, setDay] = useState("");
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
+
+  // handle date input
+  function handleDayChange(event) {
+    setDay(event.target.value);
+  }
+
+  function handleMonthChange(event) {
+    setMonth(event.target.value);
+  }
+
+  function handleYearChange(event) {
+    setYear(event.target.value);
+  }
 
   const handleOptionChange = (event) => {
     setVenueAvailability(event.target.value);
@@ -102,6 +115,12 @@ export const VenuesProvider = ({ children }) => {
         scrollUp,
         venueAvailability,
         handleOptionChange,
+        handleDayChange,
+        handleMonthChange,
+        handleYearChange,
+        day,
+        month,
+        year,
       }}
     >
       {children}

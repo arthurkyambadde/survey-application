@@ -11,7 +11,6 @@ function AboutYourDream() {
 
   const { scrollDown } = useContext(ScrollContext);
 
-  console.log(selectedVenues);
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [message, setMessage] = useState("");
 
