@@ -14,7 +14,6 @@ export function Inquiry({ id, title, subtitle, type, options }) {
         </div>
         <div className="w-2/3 p-3 flex flex-col gap-3">
           {options.map((option) => {
-            console.log(option, "option");
             return (
               <Choice
                 key={option.id}
