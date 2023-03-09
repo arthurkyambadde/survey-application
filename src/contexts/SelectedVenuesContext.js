@@ -31,12 +31,12 @@ export const VenuesProvider = ({ children }) => {
     setVenueAvailability(event.target.value);
   };
 
-  useEffect(() => {
-    window.addEventListener("wheel", tryNavigation, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", tryNavigation, { passive: false });
-    };
-  }, [tryNavigation]);
+  // useEffect(() => {
+  //   window.addEventListener("wheel", tryNavigation, { passive: false });
+  //   return () => {
+  //     window.removeEventListener("wheel", tryNavigation, { passive: false });
+  //   };
+  // }, [tryNavigation]);
 
   function tryNavigation(event) {
     event.preventDefault();
