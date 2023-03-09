@@ -12,8 +12,8 @@ export default function Note({ title, subtitle, id, placeholder, image }) {
       id={id}
     >
       <form className="w-1/2 p-24 h-auto flex flex-col justify-between">
-        <p>{title}</p>
-        <p>{subtitle}</p>
+        <p className="text-2xl font-medium">{title}</p>
+        <p className="text-base mb-6 ">{subtitle}</p>
         <Text
           placeholder={placeholder}
           name={title}

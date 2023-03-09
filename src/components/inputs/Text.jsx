@@ -17,7 +17,7 @@ export default function Text({
         value={value || ""}
         onChange={handleInputChange}
         placeholder={placeholder}
-        className="border-b-2 border-primarybtn-500 p-2 w-full outline-none focus:primarybtn-red-500"
+        className="border-b-2 border-primarybtn placeholder-primarybtn  p-2 w-full outline-none focus:primarybtn"
       />
     </div>
   );
