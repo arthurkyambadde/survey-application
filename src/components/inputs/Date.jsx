@@ -1,11 +1,11 @@
 import React from "react";
 
-export function Date({ value, holder, id, handleInputChange, labelTag }) {
+export function Date({ value, holder, id, handleInputChange, labelTag, type }) {
   return (
     <div className="flex flex-col w-14 align-middle justify-center">
       <label htmlFor="month">{labelTag}</label>
       <input
-        type="text"
+        type={type}
         id={id}
         value={value}
         onChange={handleInputChange}
