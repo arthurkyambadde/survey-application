@@ -1,14 +1,28 @@
 import React from "react";
 import Text from "../inputs/Text";
 import Confirm from "../buttons/Confirm";
+import { useVenue } from "../../hooks/useVenue";
 
-export default function Note(title, subtitle, id) {
+export default function Note({ title, subtitle, id, placeholder, image }) {
+  const { handleNoteChange, note } = useVenue();
+
   return (
-    <form className="h-screen w-screen flex flex-col items-center justify-center">
-      <p>{title}</p>
-      <p>{subtitle}</p>
-      <Text />
-      <Confirm />
-    </form>
+    <section
+      className="h-screen w-screen flex  items-center justify-center"
+      id={id}
+    >
+      <form className="w-1/2 p-24 h-auto flex flex-col justify-between">
+        <p>{title}</p>
+        <p>{subtitle}</p>
+        <Text
+          placeholder={placeholder}
+          name={title}
+          handleInputChange={handleNoteChange}
+          value={note}
+        />
+        <Confirm />
+      </form>
+      <div className="w-1/2 flex align-middle justify-center"> image</div>
+    </section>
   );
 }

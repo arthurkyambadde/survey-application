@@ -5,6 +5,8 @@ import { Instructions } from "../../onboarding";
 import { PlaceRating } from "./PlaceRating";
 import AppointmentIntroduction from "../../appointment/AppointmentIntroduction";
 import AppointmentScheduler from "../../appointment/AppointmentScheduler";
+import Note from "../../../components/question/Note";
+import { LEAVE_A_NOTE } from "../../../data/Screens";
 
 export function VenueRating() {
   //
@@ -38,6 +40,13 @@ export function VenueRating() {
       })}
       <AppointmentIntroduction />
       <AppointmentScheduler />
+      <Note
+        title={LEAVE_A_NOTE.title}
+        subtitle={LEAVE_A_NOTE.subtitle}
+        id={LEAVE_A_NOTE.id}
+        placeholder={LEAVE_A_NOTE.placeholder}
+        image={LEAVE_A_NOTE.image}
+      />
     </div>
   );
 }

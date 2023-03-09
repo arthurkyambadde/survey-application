@@ -283,5 +283,6 @@ export const LEAVE_A_NOTE = {
   title: "Notes for your fairy godmother about venue selection",
   subtitle:
     "If there is anything that needs to be renewed or mentioned additionally now is the time",
-  placeHoler: "Type your answer here",
+  placeholder: "Type your answer here",
+  image: "./url/to/img.png",
 };

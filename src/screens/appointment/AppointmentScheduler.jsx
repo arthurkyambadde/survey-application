@@ -27,20 +27,22 @@ export default function AppointmentScheduler() {
                 id={"day"}
                 handleInputChange={handleDayChange}
                 labelTag={"Day"}
+                type="day"
               />
             </div>
             <span className="p-4 text-xl text-primarybtn flex align-middle justify-center">
               /
             </span>
-            <form className="flex flex-col w-14 align-middle justify-center">
+            <div className="flex flex-col w-14 align-middle justify-center">
               <Date
                 value={month}
                 holder="MM"
                 id={"month"}
                 handleInputChange={handleMonthChange}
                 labelTag={"Month"}
+                type="text"
               />
-            </form>
+            </div>
             <span className="p-4 text-xl text-primarybtn flex align-middle justify-center">
               /
             </span>
@@ -51,6 +53,7 @@ export default function AppointmentScheduler() {
                 id={"year"}
                 handleInputChange={handleYearChange}
                 labelTag={"Year"}
+                type="year"
               />
             </div>
           </div>

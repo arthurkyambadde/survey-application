@@ -1,12 +1,24 @@
 import React from "react";
-import Label from "./Label";
-import { ulid } from "ulid";
 
-export default function Text(name, placeholder) {
-  const id = ulid();
+export default function Text({
+  name,
+  id,
+  value,
+  handleInputChange,
+  placeholder,
+  type,
+}) {
   return (
-    <Label id={id}>
-      <input type="text" id={id} name={name} placeholder={placeholder} />
-    </Label>
+    <div className="flex flex-col w-full align-middle justify-center">
+      <input
+        name={name}
+        type={type}
+        id={id}
+        value={value || ""}
+        onChange={handleInputChange}
+        placeholder={placeholder}
+        className="border-b-2 border-primarybtn-500 p-2 w-full outline-none focus:primarybtn-red-500"
+      />
+    </div>
   );
 }
