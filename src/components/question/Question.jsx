@@ -30,7 +30,7 @@ export function Question({
     if (myElementIsVisible) {
       setQuestion(id);
     }
-  }, [myElementIsVisible]);
+  }, [myElementIsVisible, id, setQuestion]);
 
   return (
     <section

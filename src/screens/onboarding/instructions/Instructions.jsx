@@ -14,7 +14,7 @@ export function Instructions({ title, subtitle, text, image, id }) {
     if (myElementIsVisible) {
       setSection(id);
     }
-  }, [myElementIsVisible]);
+  }, [myElementIsVisible, id, setSection]);
 
   return (
     <section
