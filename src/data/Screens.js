@@ -277,3 +277,11 @@ export const STEP_3_QUESTIONS = {
     },
   ],
 };
+
+export const LEAVE_A_NOTE = {
+  id: ulid(),
+  title: "Notes for your fairy godmother about venue selection",
+  subtitle:
+    "If there is anything that needs to be renewed or mentioned additionally now is the time",
+  placeHoler: "Type your answer here",
+};
