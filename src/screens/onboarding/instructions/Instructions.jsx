@@ -20,12 +20,12 @@ export function Instructions({ title, subtitle, text, image, id }) {
     <section
       id={id}
       ref={ref}
-      className="h-screen w-screen flex items-center justify-center"
+      className="h-screen w-screen flex items-center justify-center "
     >
-      <div className="w-1/2 p-24 h-1/2 flex flex-col justify-between">
-        <h2 className="text-2xl mb-2">{title}</h2>
-        <p className="text-2xl">{subtitle}</p>
-        <p className="text-2xl mb-8">{text}</p>
+      <div className="w-1/2 p-16 h-1/2 flex flex-col justify-between">
+        <h2 className="text-5xl mb-5 font-normal ">{title}</h2>
+        <p className="text-4xl mb-4">{subtitle}</p>
+        <p className="text-4xl mb-8 ">{text}</p>
 
         <Submit />
       </div>

@@ -39,13 +39,15 @@ export function Question({
       className="h-screen w-screen flex items-center justify-center relative"
     >
       {type === "single_select" && (
-        <div className="absolute top-0 w-full h-14 text-2xl bg-headerbg flex items-center justify-center">
+        <div className="absolute top-0 w-full h-14 text-lg  bg-headerbg flex items-center justify-center">
           {venueTitle}
         </div>
       )}
       <div className="w-1/2 p-24 h-auto flex flex-col justify-between">
-        <p className="text-2xl mb-6">{title}</p>
-        {subtitle && <p className="text-sm text-primarybtn">{subtitle}</p>}
+        <p className=" text-5xl font-normal  mb-6">{title}</p>
+        {subtitle && (
+          <p className="text-sm  font-sans text-primarybtn">{subtitle}</p>
+        )}
 
         {description && <p className="text-2xl mb-6">{description}</p>}
         {attachment && <a href={attachment.link}>{attachment.text}</a>}

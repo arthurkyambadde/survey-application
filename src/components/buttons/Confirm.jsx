@@ -11,7 +11,7 @@ export default function Confirm() {
       className="py-2 px-2  mt-4 gap-2 rounded bg-primarybtn flex align-middle justify-between text-white w-[80px]"
       onClick={scrollDown}
     >
-      <span className="text-white  font-medium ">OK</span>
+      <span className="text-white  font-normal text-4xl ">OK</span>
       <img src={whiteTickIcon} alt="white tick" className="h-6 w-6" />
     </button>
   );
