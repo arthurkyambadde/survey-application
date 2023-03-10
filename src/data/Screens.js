@@ -1,15 +1,23 @@
 import { ulid } from "ulid";
+import introductionGif from "../assets/sectionsvgs/introduction";
+import castleGif from "../assets/sectionsvgs/castle.gif";
+import gardenGreenImage from "../assets/sectionsvgs/gardenGreen.gif";
+import desertDreamImage from "../assets/sectionsvgs/desert_dream.gif";
+import distinctilyArizonaImage from "../assets/sectionsvgs/distinctly_arizona.gif";
+import industrialImage from "../assets/sectionsvgs/industrial.gif";
+import modernImage from "../assets/sectionsvgs/modern.gif";
+import rustic_yet_chicImage from "../assets/sectionsvgs/rustic_yet_chic.gif";
 
 export const ONBOARDING_DATA = {
   introduction: {
     title: "The Venue Ranker",
-    video: "../url/to/video.mp4",
+    videoUrl: "1&loop=1",
   },
   instructions: {
     title: "Pixie point",
     subtitle: `As you work through the ranker, please only select one as "my favorite."`,
     text: `Each venue has a "venue specifics" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.`,
-    image: "../url/to/image.jpg",
+    imageUrl: introductionGif,
   },
 };
 
@@ -37,7 +45,7 @@ export const STEP_1_QUESTION = {
       { id: questionIds["F"], label: "F", text: "Rustic yet Chic" },
     ],
   },
-  image: `../url/to/img.jp`,
+  imageUrl: castleGif,
 };
 
 const RATINGS = [
@@ -59,7 +67,7 @@ export const STEP_2_QUESTIONS = {
       title: "Garden Greenery",
       subtitle:
         "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
-      image: "../url/to/image.jpg",
+      imageUrl: gardenGreenImage,
     },
     controlsIntructions: {
       text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
@@ -73,7 +81,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download_Venue Specific Details",
-          link: "../to/download Url/of the attachment",
+          link: "AGifXQlNXHw",
         },
         controlsIntructions: {
           text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
@@ -88,7 +96,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "../to/download Url/of the attachment",
+          link: "CwLWV3k9h2Y",
         },
       },
       {
@@ -100,7 +108,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "../to/download Url/of the attachment",
+          link: "CwLWV3k9h2Y",
         },
       },
       {
@@ -112,7 +120,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "../to/download Url/of the attachment",
+          link: "mL-WYrEq5EM",
         },
       },
       {
@@ -124,7 +132,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "../to/download Url/of the attachment",
+          link: "CwLWV3k9h2Y",
         },
       },
       {
@@ -136,7 +144,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "../to/download Url/of the attachment",
+          link: "CwLWV3k9h2Y",
         },
       },
     ],
@@ -146,85 +154,306 @@ export const STEP_2_QUESTIONS = {
       title: "Desert drean",
       subtitle:
         "Perfectly pristine desert landscaping and authentic desert backdrops!",
-      image: "../url/to/image.jpg",
+      imageUrl: desertDreamImage,
     },
     attachment: {
       text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: ulid(), label: "01", text: "The Paseo" },
-      { id: ulid(), label: "02", text: "Desert Foothills" },
+      {
+        id: ulid(),
+        label: "01",
+        text: "The Paseo",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "HrAQPgOEO68",
+        },
+      },
+      {
+        id: ulid(),
+        label: "02",
+        text: "Desert Foothills",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "T4Nbf3k06Vs",
+        },
+      },
     ],
   },
   [questionIds["C"]]: {
     instructions: {
       title: "Distinctily arizona",
       subtitle: "The definition of the Southwest's history and present!",
-      image: "../url/to/image.jpg",
+      imageUrl: distinctilyArizonaImage,
     },
     attachment: {
       text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: ulid(), label: "01", text: "Schnep's Farm - Farm House" },
-      { id: ulid(), label: "02", text: "Hacienda Del Sol" },
-      { id: ulid(), label: "03", text: "Tanque Verde - Saguaro Room" },
-      { id: ulid(), label: "04", text: "The Historic Bates Mansion" },
-      { id: ulid(), label: "05", text: "The Irish Cultural Center" },
-      { id: ulid(), label: "06", text: "The Ocotillo" },
-      { id: ulid(), label: "07", text: "The Vic" },
-      { id: ulid(), label: "08", text: "La Cocina at Encanterra " },
-      { id: ulid(), label: "09", text: "The Rubi House" },
+      {
+        id: ulid(),
+        label: "01",
+        text: "Schnep's Farm - Farm House",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "CwLWV3k9h2Y",
+        },
+      },
+      {
+        id: ulid(),
+        label: "02",
+        text: "Hacienda Del Sol",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "1oTX2dAi5Ig",
+        },
+      },
+      {
+        id: ulid(),
+        label: "03",
+        text: "Tanque Verde - Saguaro Room",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "MetPMveCal0",
+        },
+      },
+      {
+        id: ulid(),
+        label: "04",
+        text: "The Historic Bates Mansion",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "psMcgHpJ-ec",
+        },
+      },
+      {
+        id: ulid(),
+        label: "05",
+        text: "The Irish Cultural Center",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "8UDbpY5-frU",
+        },
+      },
+      {
+        id: ulid(),
+        label: "06",
+        text: "The Ocotillo",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "Y6TGV5PQIE",
+        },
+      },
+      {
+        id: ulid(),
+        label: "07",
+        text: "The Vic",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "CwLWV3k9h2Y",
+        },
+      },
+      {
+        id: ulid(),
+        label: "08",
+        text: "La Cocina at Encanterra ",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "CwLWV3k9h2Y",
+        },
+      },
+      {
+        id: ulid(),
+        label: "09",
+        text: "The Rubi House",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "_F-fbyBIXro",
+        },
+      },
     ],
   },
   [questionIds["D"]]: {
     instructions: {
       title: "Industrial",
       subtitle: "Clean, classic, and perfectly pulled together!",
-      image: "../url/to/image.jpg",
+      imageUrl: industrialImage,
     },
     attachment: {
       text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: ulid(), label: "01", text: "Sunkist" },
-      { id: ulid(), label: "02", text: "Fabric" },
+      {
+        id: ulid(),
+        label: "01",
+        text: "Sunkist",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "FfNc9n4sIGM",
+        },
+      },
+      {
+        id: ulid(),
+        label: "02",
+        text: "Fabric",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "rwGNjmwVp-o",
+        },
+      },
     ],
   },
   [questionIds["E"]]: {
     instructions: {
       title: "Modern",
       subtitle: "Fun, sleek, and cool!",
-      image: "../url/to/image.jpg",
+      imageUrl: modernImage,
     },
     attachment: {
       text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: ulid(), label: "01", text: "Juncture PHX" },
-      { id: ulid(), label: "02", text: "Soho63" },
-      { id: ulid(), label: "03", text: "Hotel Valley Ho" },
+      {
+        id: ulid(),
+        label: "01",
+        text: "Juncture PHX",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "tGrHIo3sh-0",
+        },
+      },
+      {
+        id: ulid(),
+        label: "02",
+        text: "Soho63",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "-Gdd9qk9B7s",
+        },
+      },
+      {
+        id: ulid(),
+        label: "03",
+        text: "Hotel Valley Ho",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "BQnWf9iXuj8",
+        },
+      },
     ],
   },
   [questionIds["F"]]: {
     instructions: {
-      title: "Modern",
-      subtitle: "Fun, sleek, and cool!",
-      image: "../url/to/image.jpg",
+      title: "	Rustic Yet Chic",
+      subtitle:
+        "Classic and cozy spaces that are classed up and ready for a party",
+      imageUrl: rustic_yet_chicImage,
     },
     attachment: {
       text: "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
       link: "../to/download Url/of the attachment",
     },
     places: [
-      { id: ulid(), label: "01", text: "The Windmill Winery - Big Red Barn" },
-      { id: ulid(), label: "02", text: "Schnep's Farm - Big Red Barn" },
-      { id: ulid(), label: "03", text: "Tanque Verde - Big Barn" },
-      { id: ulid(), label: "04", text: "Tanque Verde - Cottonwood Grove" },
+      {
+        id: ulid(),
+        label: "01",
+        text: "The Windmill Winery - Big Red Barn",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "CwLWV3k9h2Y",
+        },
+      },
+      {
+        id: ulid(),
+        label: "02",
+        text: "Schnep's Farm - Big Red Barn",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "CwLWV3k9h2Y",
+        },
+      },
+      {
+        id: ulid(),
+        label: "03",
+        text: "Tanque Verde - Big Barn",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "ezNyNDvRT1U",
+        },
+      },
+      {
+        id: ulid(),
+        label: "04",
+        text: "Tanque Verde - Cottonwood Grove",
+        description:
+          "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+        attachment: {
+          text: "Download PDF",
+          link: "SJ9neqsvNbo",
+        },
+      },
     ],
   },
 };
