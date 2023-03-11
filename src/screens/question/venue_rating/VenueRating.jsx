@@ -13,18 +13,18 @@ export function VenueRating() {
   const { selectedVenues, venueRating, setPlaceRating } = useVenue();
 
   return (
-    <div>
+    <div className="h-auto relative">
       {selectedVenues.map((item) => {
         const venue = STEP_2_QUESTIONS[item].instructions;
         const controlInstructions = STEP_2_QUESTIONS.controlsIntructions;
 
         return (
-          <React.Fragment key={item}>
+          <section key={item} className="relative">
             <Instructions
               id={item}
               title={venue.title}
               subtitle={venue.subtitle}
-              image={venue.image}
+              imageUrl={venue.imageUrl}
             />
             <PlaceRating
               places={STEP_2_QUESTIONS[item].places}
@@ -35,7 +35,7 @@ export function VenueRating() {
               venueTitle={venue.title}
             />
             <Instructions id={item} title={controlInstructions.text} />
-          </React.Fragment>
+          </section>
         );
       })}
       <AppointmentIntroduction />

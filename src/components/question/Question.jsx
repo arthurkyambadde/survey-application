@@ -4,6 +4,7 @@ import Choice from "../choice/Choice";
 import Error from "../error/Error";
 import { useInView } from "react-intersection-observer";
 import { useVenue } from "../../hooks/useVenue";
+import { MediaViewer } from "../MediaViewer/MediaViewer";
 
 export function Question({
   id,
@@ -20,6 +21,8 @@ export function Question({
   attachment,
   superId,
   venueTitle,
+  imageUrl,
+  videoUrl,
 }) {
   const { ref, inView: myElementIsVisible } = useInView({
     threshold: 0.2,
@@ -38,11 +41,6 @@ export function Question({
       id={id}
       className="h-screen w-screen flex items-center justify-center relative"
     >
-      {type === "single_select" && (
-        <div className="absolute top-0 w-full h-14 text-lg  bg-headerbg flex items-center justify-center">
-          {venueTitle}
-        </div>
-      )}
       <div className="w-1/2 p-24 h-auto flex flex-col justify-between">
         <p className=" text-5xl font-normal  mb-6">{title}</p>
         {subtitle && (
@@ -74,7 +72,9 @@ export function Question({
         {!showError && <Confirm />}
         <Error text={errorText} visible={showError} />
       </div>
-      <div className="w-1/2 flex align-middle justify-center"> image</div>
+      <div className="w-1/2 flex align-middle justify-center">
+        <MediaViewer videoUrl={videoUrl} imageUrl={imageUrl} />
+      </div>
     </section>
   );
 }
