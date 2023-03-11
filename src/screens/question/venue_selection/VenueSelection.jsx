@@ -4,8 +4,7 @@ import { useVenue } from "../../../hooks/useVenue";
 import { STEP_1_QUESTION } from "../../../data/Screens";
 
 export function VenueSelection() {
-  const { selectedVenues, toggleSelectedVenue, hasError, imageUrl } =
-    useVenue();
+  const { selectedVenues, toggleSelectedVenue, hasError } = useVenue();
 
   return (
     <Question
