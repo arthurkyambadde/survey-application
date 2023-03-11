@@ -11,7 +11,7 @@ import rustic_yet_chicImage from "../assets/sectionsvgs/rustic_yet_chic.gif";
 export const ONBOARDING_DATA = {
   introduction: {
     title: "The Venue Ranker",
-    videoUrl: "1&loop=1",
+    videoUrl: "https://www.youtube.com/embed/1&loop=1",
   },
   instructions: {
     title: "Pixie point",
@@ -81,7 +81,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download_Venue Specific Details",
-          link: "AGifXQlNXHw",
+          link: "https://www.youtube.com/embed/AGifXQlNXHw",
         },
         controlsIntructions: {
           text: "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
@@ -96,7 +96,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -108,7 +108,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -120,7 +120,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "mL-WYrEq5EM",
+          link: "https://www.youtube.com/embed/mL-WYrEq5EM",
         },
       },
       {
@@ -132,7 +132,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -144,7 +144,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
     ],
@@ -170,7 +170,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "HrAQPgOEO68",
+          link: "https://www.youtube.com/embed/HrAQPgOEO68",
         },
       },
       {
@@ -182,7 +182,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "T4Nbf3k06Vs",
+          link: "https://www.youtube.com/embed/T4Nbf3k06Vs",
         },
       },
     ],
@@ -207,7 +207,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -219,7 +219,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "1oTX2dAi5Ig",
+          link: "https://www.youtube.com/embed/1oTX2dAi5Ig",
         },
       },
       {
@@ -231,7 +231,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "MetPMveCal0",
+          link: "https://www.youtube.com/embed/MetPMveCal0",
         },
       },
       {
@@ -243,7 +243,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "psMcgHpJ-ec",
+          link: "https://www.youtube.com/embed/psMcgHpJ-ec",
         },
       },
       {
@@ -255,7 +255,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "8UDbpY5-frU",
+          link: "https://www.youtube.com/embed/8UDbpY5-frU",
         },
       },
       {
@@ -267,7 +267,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "Y6TGV5PQIE",
+          link: "https://www.youtube.com/embed/Y6TGV5PQIE",
         },
       },
       {
@@ -279,7 +279,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -291,7 +291,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -303,7 +303,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "_F-fbyBIXro",
+          link: "https://www.youtube.com/embed/_F-fbyBIXro",
         },
       },
     ],
@@ -328,7 +328,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "FfNc9n4sIGM",
+          link: "https://www.youtube.com/embed/FfNc9n4sIGM",
         },
       },
       {
@@ -340,7 +340,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "rwGNjmwVp-o",
+          link: "https://www.youtube.com/embed/rwGNjmwVp-o",
         },
       },
     ],
@@ -365,7 +365,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "tGrHIo3sh-0",
+          link: "https://www.youtube.com/embed/tGrHIo3sh-0",
         },
       },
       {
@@ -377,7 +377,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "-Gdd9qk9B7s",
+          link: "https://www.youtube.com/embed/-Gdd9qk9B7s",
         },
       },
       {
@@ -389,7 +389,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "BQnWf9iXuj8",
+          link: "https://www.youtube.com/embed/BQnWf9iXuj8",
         },
       },
     ],
@@ -415,7 +415,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -427,7 +427,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "CwLWV3k9h2Y",
+          link: "https://www.youtube.com/embed/CwLWV3k9h2Y",
         },
       },
       {
@@ -439,7 +439,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "ezNyNDvRT1U",
+          link: "https://www.youtube.com/embed/ezNyNDvRT1U",
         },
       },
       {
@@ -451,7 +451,7 @@ export const STEP_2_QUESTIONS = {
 
         attachment: {
           text: "Download PDF",
-          link: "SJ9neqsvNbo",
+          link: "https://www.youtube.com/embed/SJ9neqsvNbo",
         },
       },
     ],

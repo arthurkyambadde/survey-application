@@ -85,6 +85,7 @@ export const VenuesProvider = ({ children }) => {
 
   const scrollDown = () => {
     if (question === "__select_venue__") {
+      console.log(question, "question");
       // check that venue has been selected before going forward
       if (selectedVenues.length < 2) {
         setHasError(true);
