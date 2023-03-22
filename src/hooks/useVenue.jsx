@@ -23,6 +23,8 @@ export function useVenue() {
     year,
     handleNoteChange,
     note,
+    handleTextInputChange,
+    inputText,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
@@ -75,5 +77,7 @@ export function useVenue() {
     year,
     handleNoteChange,
     note,
+    handleTextInputChange,
+    inputText,
   };
 }

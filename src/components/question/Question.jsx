@@ -20,20 +20,29 @@ export function Question({
   selectedValue,
   attachment,
   superId,
-  venueTitle,
   imageUrl,
   videoUrl,
 }) {
   const { ref, inView: myElementIsVisible } = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
   });
-  const { setQuestion } = useVenue();
+  const { setQuestion, selectedVenues } = useVenue();
 
   useEffect(() => {
     if (myElementIsVisible) {
       setQuestion(id);
     }
   }, [myElementIsVisible, id, setQuestion]);
+
+  let optionsError;
+  const numSelected = selectedVenues.length;
+  if (numSelected === 1) {
+    optionsError = "Choose at least 1 more";
+  } else if (numSelected === 2 || numSelected === 0) {
+    optionsError = "Make between 2 and 6 choices";
+  } else if (numSelected < 6) {
+    optionsError = `You can choose ${6 - numSelected} more`;
+  }
 
   return (
     <section
@@ -49,6 +58,9 @@ export function Question({
 
         {description && <p className="text-2xl mb-6">{description}</p>}
         {attachment && <a href={attachment.link}>{attachment.text}</a>}
+        <p className="text-sm  font-sans text-primarybtn mb-2">
+          {optionsError}
+        </p>
         <div className="w-64 flex flex-col gap-2">
           {options.map((option) => {
             return (

@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins: [
     require("tailwind-scrollbar"),
-    // require("tailwindcss/forms"),
-    // require("tailwind-gradient-mask-image"),
+    require("@tailwindcss/forms"),
+    require("tailwind-gradient-mask-image"),
   ],
 };

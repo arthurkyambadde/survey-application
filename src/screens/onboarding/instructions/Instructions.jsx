@@ -6,7 +6,7 @@ import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 
 export function Instructions({ title, subtitle, text, imageUrl, id }) {
   const { ref, inView: myElementIsVisible } = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
   });
 
   const { setSection } = useVenue();

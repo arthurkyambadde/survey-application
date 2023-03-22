@@ -1,8 +1,6 @@
 import React from "react";
 
 export function MediaViewer({ videoUrl, imageUrl }) {
-  console.log(videoUrl, "video");
-
   return (
     <div className="right w-full">
       {imageUrl && <img src={imageUrl} alt="" />}

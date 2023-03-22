@@ -1,15 +1,28 @@
 import React from "react";
 import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 import { Question } from "../../../components/question/Question";
-import { STEP_2_QUESTIONS } from "../../../data/Screens";
+import { data } from "../../../data/data";
 import { useVenue } from "../../../hooks/useVenue";
 import "./PlaceRating.css";
 
-export function PlaceRating({ places, onRatePlace, placeRatings, venueTitle }) {
+export function PlaceRating({
+  places,
+  onRatePlace,
+  placeRatings,
+  venueTitle,
+  item_id,
+}) {
   const { hasError } = useVenue();
+
   return (
     <section className="relative">
       {places.map((place) => {
+        const place_id = place.id;
+        const places_layout = data.STEP_2_QUESTIONS[item_id].places;
+        const place_layout = places_layout.find((item) => item.id === place_id);
+
+        const options = data.mcqs.choices;
+
         return (
           <section className="h-screen w-screen relative" key={place.id}>
             <div
@@ -29,11 +42,11 @@ export function PlaceRating({ places, onRatePlace, placeRatings, venueTitle }) {
                 <Question
                   key={place.id}
                   id={place.id}
-                  title={place.text}
-                  attachment={place.attachment}
-                  description={place.description}
-                  type={STEP_2_QUESTIONS.type}
-                  options={STEP_2_QUESTIONS.choices}
+                  title={place.question}
+                  attachment={place_layout.attachment}
+                  description={place_layout.description}
+                  type={data.STEP_2_QUESTIONS.type}
+                  options={options}
                   onMakeSelection={(answerId) =>
                     onRatePlace(place.id, answerId)
                   }
@@ -44,7 +57,7 @@ export function PlaceRating({ places, onRatePlace, placeRatings, venueTitle }) {
                 />
               </div>
               <div className="w-1/2 p-24 h-1/2 flex align-middle justify-center">
-                <MediaViewer videoUrl={place.attachment.link} />
+                <MediaViewer videoUrl={place_layout.attachment.link} />
               </div>
             </div>
           </section>

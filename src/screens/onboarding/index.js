@@ -1,4 +1,4 @@
 import { Instructions } from "./instructions/Instructions";
-import { VideoIntroduction } from "./video/Video";
+import { Introduction } from "./Introduction/Introduction";
 
-export { Instructions, VideoIntroduction };
+export { Instructions, Introduction };

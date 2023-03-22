@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import { INITIAL_PLACES_RANKING } from "../data/Screens";
+import { INITIAL_PLACES_RANKING } from "../data/data";
 
 export const VenuesContext = createContext();
 
@@ -14,8 +14,13 @@ export const VenuesProvider = ({ children }) => {
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
   const [note, setNote] = useState("");
+  const [inputText, setInputText] = useState("");
 
   // handle date input
+  function handleTextInputChange(event) {
+    setInputText(event.target.value);
+  }
+
   function handleDayChange(event) {
     setDay(event.target.value);
   }
@@ -23,6 +28,7 @@ export const VenuesProvider = ({ children }) => {
   function handleMonthChange(event) {
     setMonth(event.target.value);
   }
+
   function handleNoteChange(event) {
     setNote(event.target.value);
   }
@@ -84,17 +90,19 @@ export const VenuesProvider = ({ children }) => {
   // }
 
   const scrollDown = () => {
+    // console.log(question, "question");
+
     if (question === "__select_venue__") {
-      console.log(question, "question");
+      // console.log(question, "question");
       // check that venue has been selected before going forward
       if (selectedVenues.length < 2) {
         setHasError(true);
-        return false;
+        return;
       }
     } else if (question) {
       if (!venueRating[section][question]) {
         setHasError(true);
-        return false;
+        return;
       }
     }
     window.scrollBy(0, window.innerHeight); // scroll down by 100vh
@@ -129,6 +137,8 @@ export const VenuesProvider = ({ children }) => {
         month,
         year,
         note,
+        handleTextInputChange,
+        inputText,
       }}
     >
       {children}
