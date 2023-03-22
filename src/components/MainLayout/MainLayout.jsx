@@ -25,6 +25,9 @@ export default function MainLayout() {
         if (item.type === "multi_choice_question") {
           return <VenueSelection {...item} key={item.id} />;
         }
+
+        // Add a default return statement
+        return null;
       })}
       {questions.map((item) => {
         if (item.type === "single_select_question") {
@@ -34,6 +37,9 @@ export default function MainLayout() {
         if (item.type === "description") {
           return <AppointmentScheduler {...item} key={item.id} />;
         }
+
+        // Add a default return statement
+        return null;
       })}
       <End />
     </>
