@@ -1,6 +1,7 @@
 import React from "react";
 import Label from "./Label";
 import tickIcon from "../../assets/icons/tick.svg";
+import { useVenue } from "../../hooks/useVenue";
 
 export default function Radio({
   id,
@@ -11,9 +12,10 @@ export default function Radio({
   isChecked,
 }) {
   const borderStyle = isChecked ? "border-4" : "border-2";
+  const { radioScrollDown } = useVenue();
 
   return (
-    <div
+    <button
       className={`bg-checkboxBg hover:bg-checkboxHoverBg cursor-pointer flex py-0.25 px-2 py-2 rounded w-full border-primarybtn  ${borderStyle}`}
     >
       <input
@@ -24,6 +26,7 @@ export default function Radio({
         onChange={onChange}
         name={name}
         value={id}
+        onClick={radioScrollDown}
       />
       <Label id={id}>
         <div className="flex gap-1">
@@ -43,6 +46,6 @@ export default function Radio({
           />
         )}
       </Label>
-    </div>
+    </button>
   );
 }
