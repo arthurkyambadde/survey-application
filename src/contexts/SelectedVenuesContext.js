@@ -108,6 +108,14 @@ export const VenuesProvider = ({ children }) => {
     window.scrollBy(0, window.innerHeight); // scroll down by 100vh
   };
 
+  const scrolldownForRadio = () => {
+    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
+  };
+
+  const radioScrollDown = () => {
+    setTimeout(scrolldownForRadio, 400);
+  };
+
   const scrollUp = () => {
     window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
   };
@@ -139,6 +147,7 @@ export const VenuesProvider = ({ children }) => {
         note,
         handleTextInputChange,
         inputText,
+        radioScrollDown,
       }}
     >
       {children}
