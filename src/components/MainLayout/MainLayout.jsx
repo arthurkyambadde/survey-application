@@ -14,7 +14,7 @@ const components = {
   instructions: Instructions,
   multi_choice_question: VenueSelection,
   single_select_answers: AppointmentIntroduction,
-  single_select_question: AppointmentIntroduction,
+  single_select: AppointmentIntroduction,
   description: AppointmentScheduler,
 };
 

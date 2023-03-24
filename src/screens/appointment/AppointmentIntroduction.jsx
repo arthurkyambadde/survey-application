@@ -1,14 +1,14 @@
 import React from "react";
 import { Inquiry } from "../../components/question/Inquiry";
-import { STEP_3_QUESTIONS } from "../../data/Screens";
 
-function AppointmentIntroduction() {
+function AppointmentIntroduction(props) {
   return (
     <Inquiry
-      type={STEP_3_QUESTIONS.type}
-      title={STEP_3_QUESTIONS.introduction}
-      subtitle={STEP_3_QUESTIONS.subtitle}
-      options={STEP_3_QUESTIONS.answers}
+      id={props.id}
+      type={props.type}
+      title={props.introduction}
+      subtitle={props.subtitle}
+      options={props.question}
     />
   );
 }
