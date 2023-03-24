@@ -11,7 +11,6 @@ const App = () => {
     <VenuesProvider>
       <div>
         <Controls />
-
         <MainLayout />
       </div>
     </VenuesProvider>

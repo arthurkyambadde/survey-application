@@ -630,7 +630,7 @@ export const data = {
 
       {
         id: ulid(),
-        type: "single_select_question",
+        type: "single_select",
         introduction: ` Venue availability differs drastically based on the date and day you
         decide to have your wedding. How flexible are you when it comes to
         your date?`,
