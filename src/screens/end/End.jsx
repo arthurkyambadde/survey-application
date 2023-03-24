@@ -3,7 +3,6 @@ import { MediaViewer } from "../../components/MediaViewer/MediaViewer";
 import { data } from "../../data/data";
 
 export default function End() {
-  console.log(data.end_page);
   return (
     <section
       className={`h-screen w-screen flex items-center flex-col justify-center`}
