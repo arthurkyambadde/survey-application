@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { createContext } from "react";
 import Controls from "./components/controls/Controls";
-import MainLayout from "./components/MainLayout/MainLayout";
+import { MainLayout } from "./components/MainLayout/MainLayout";
 import { VenuesProvider } from "./contexts/SelectedVenuesContext";
 // import { ONBOARDING_DATA } from "./data/Screens";
 // import { Instructions, VideoIntroduction } from "./screens/onboarding";
