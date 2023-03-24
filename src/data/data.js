@@ -465,20 +465,10 @@ export const data = {
       title: "Lets talk dates",
       imageUrl: desertDreamImage,
     },
-
-    // end pages
-
-    {
-      type: "end_page",
-      imageUrl: "path/to/image/path",
-      title: `Way to go!
-      Your Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!`,
-    },
   ],
 
-  venueRankerQuestions: [
-    //venues questions
-    {
+  formQuestion: {
+    STEP_2_QUESTIONS_OPTIONS: {
       [questionIds["A"]]: {
         places: [
           {
@@ -635,68 +625,73 @@ export const data = {
       },
     },
 
-    {
-      id: ulid(),
-      type: "single_select_question",
-      introduction: ` Venue availability differs drastically based on the date and day you
+    venueRanker: [
+      //venues questions
+
+      {
+        id: ulid(),
+        type: "single_select_question",
+        introduction: ` Venue availability differs drastically based on the date and day you
         decide to have your wedding. How flexible are you when it comes to
         your date?`,
-      subtitle: "Description(Optional)",
-      question: [
-        {
-          id: ulid(),
-          label: "A",
+        subtitle: "Description(Optional)",
+        question: [
+          {
+            id: ulid(),
+            label: "A",
 
-          choice:
-            "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list.",
-        },
-        {
-          id: ulid(),
-          label: "B",
-          choice:
-            " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday.",
-        },
-        {
-          id: ulid(),
-          label: "C",
-          choice:
-            "We are willing to look at booking a week day date as long as it’s in the same month.",
-        },
-        {
-          id: ulid(),
-          label: "D",
-          choice:
-            "We are flexible on the month and the day if it lets us book our favorite venue.",
-        },
-        {
-          id: ulid(),
-          label: "E",
-          choice: "We haven't settled on a date and we're open to suggestions.",
-        },
-      ],
-      answer: "",
-    },
+            choice:
+              "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list.",
+          },
+          {
+            id: ulid(),
+            label: "B",
+            choice:
+              " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday.",
+          },
+          {
+            id: ulid(),
+            label: "C",
+            choice:
+              "We are willing to look at booking a week day date as long as it’s in the same month.",
+          },
+          {
+            id: ulid(),
+            label: "D",
+            choice:
+              "We are flexible on the month and the day if it lets us book our favorite venue.",
+          },
+          {
+            id: ulid(),
+            label: "E",
+            choice:
+              "We haven't settled on a date and we're open to suggestions.",
+          },
+        ],
+        answer: "",
+      },
 
-    {
-      id: ulid(),
-      type: "description",
-      question: " What date did you have in mind?",
-      subtile:
-        "If you havent decided just enter any date for this coming month",
-      input_type: "date",
-      link: gardenGreenImage,
-      answer: "",
-    },
-    {
-      id: ulid(),
-      type: "description",
-      question: "Notes for your fairy godmother about venue selection",
-      subtitle:
-        "If there is anything that needs to be renewed or mentioned additionally now is the time",
-      input_type: "text",
-      placeHolder: "Type your answer here",
-      link: gardenGreenImage,
-      answer: "",
-    },
-  ],
+      {
+        id: ulid(),
+        type: "description",
+        question: " What date did you have in mind?",
+        subtile:
+          "If you havent decided just enter any date for this coming month",
+        input_type: "date",
+        link: gardenGreenImage,
+        answer: "",
+      },
+      {
+        id: ulid(),
+        type: "description",
+        question: "Notes for your fairy godmother about venue selection",
+        subtitle:
+          "If there is anything that needs to be renewed or mentioned additionally now is the time",
+        input_type: "text",
+        placeHolder: "Type your answer here",
+        link: gardenGreenImage,
+        answer: "",
+      },
+    ],
+  },
 };
