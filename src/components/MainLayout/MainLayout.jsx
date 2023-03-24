@@ -5,43 +5,31 @@ import { Instructions } from "../../screens/onboarding/instructions/Instructions
 import { VenueSelection } from "../../screens/question/venue_selection/VenueSelection";
 import AppointmentIntroduction from "../../screens/appointment/AppointmentIntroduction";
 import AppointmentScheduler from "../../screens/appointment/AppointmentScheduler";
+import { createLayout } from "./createLayout/createLayout";
+import { createQuestions } from "./createQuestions/createQuestions";
 import End from "../../screens/end/End";
 
-export default function MainLayout() {
+const components = {
+  introduction: Introduction,
+  instructions: Instructions,
+  multi_choice_question: VenueSelection,
+  single_select_answers: AppointmentIntroduction,
+  single_select_question: AppointmentIntroduction,
+  description: AppointmentScheduler,
+};
+
+export const MainLayout = () => {
   const layout = data.venueRankerLayout;
-  const questions = data.venueRankerQuestions;
+  const questions = data.formQuestion.venueRanker;
+
+  const LayoutComponent = createLayout(layout, components);
+  const QuestionsComponent = createQuestions(questions, components);
 
   return (
     <>
-      {layout.map((item) => {
-        if (item.type === "introduction") {
-          return <Introduction {...item} key={item.id} />;
-        }
-
-        if (item.type === "instructions") {
-          return <Instructions {...item} key={item.id} />;
-        }
-
-        if (item.type === "multi_choice_question") {
-          return <VenueSelection {...item} key={item.id} />;
-        }
-
-        // Add a default return statement
-        return null;
-      })}
-      {questions.map((item) => {
-        if (item.type === "single_select_question") {
-          return <AppointmentIntroduction {...item} key={item.id} />;
-        }
-
-        if (item.type === "description") {
-          return <AppointmentScheduler {...item} key={item.id} />;
-        }
-
-        // Add a default return statement
-        return null;
-      })}
+      <LayoutComponent />
+      <QuestionsComponent />
       <End />
     </>
   );
-}
+};
