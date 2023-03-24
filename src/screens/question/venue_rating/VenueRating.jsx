@@ -13,7 +13,7 @@ export function VenueRating() {
       {selectedVenues.map((item) => {
         const venue = data.STEP_2_QUESTIONS[item].instructions;
 
-        const venue_questions = data.venueRankerQuestions[0];
+        const venue_questions = data.formQuestion.STEP_2_QUESTIONS_OPTIONS;
         const placesquestion = venue_questions[item].places;
 
         return (
