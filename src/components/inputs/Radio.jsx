@@ -17,6 +17,7 @@ export default function Radio({
   return (
     <button
       className={`bg-checkboxBg hover:bg-checkboxHoverBg cursor-pointer flex py-0.25 px-2 py-2 rounded w-full border-primarybtn  ${borderStyle}`}
+      onClick={radioScrollDown}
     >
       <input
         type="radio"
@@ -26,7 +27,6 @@ export default function Radio({
         onChange={onChange}
         name={name}
         value={id}
-        onClick={radioScrollDown}
       />
       <Label id={id}>
         <div className="flex gap-1">
