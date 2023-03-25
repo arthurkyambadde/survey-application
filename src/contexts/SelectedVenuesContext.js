@@ -15,107 +15,74 @@ export const VenuesProvider = ({ children }) => {
   const [year, setYear] = useState("");
   const [note, setNote] = useState("");
   const [inputText, setInputText] = useState("");
+  const [lastClickTime, setLastClickTime] = useState(0);
 
-  // handle date input
+  // handle text input events input
   function handleTextInputChange(event) {
     setInputText(event.target.value);
   }
 
+  // handle day input events input
   function handleDayChange(event) {
     setDay(event.target.value);
   }
 
+  // handle month input events input
   function handleMonthChange(event) {
     setMonth(event.target.value);
   }
 
+  // handle note input events input
   function handleNoteChange(event) {
     setNote(event.target.value);
   }
 
+  // handle year input events input
   function handleYearChange(event) {
     setYear(event.target.value);
   }
 
+  // handle option input events input
   const handleOptionChange = (event) => {
     setVenueAvailability(event.target.value);
   };
 
-  useEffect(() => {
-    // window.addEventListener("wheel", tryNavigation, { passive: false });
-    return () => {
-      // window.removeEventListener("wheel", tryNavigation, { passive: false });
-    };
-  }, []);
-
-  // function tryNavigation(event) {
-  //   event.preventDefault();
-
-  //   const scrollPosition = window.scrollY;
-  //   const windowHeight = window.innerHeight;
-  //   const maxScrollPosition = document.body.scrollHeight - windowHeight;
-  //   const delta = event.deltaY;
-  //   const scrollAmount =
-  //     delta > 0
-  //       ? Math.min(maxScrollPosition - scrollPosition, windowHeight)
-  //       : Math.max(-scrollPosition, -windowHeight);
-
-  //   if (scrollAmount !== 0) {
-  //     event.stopPropagation();
-  //     event.stopImmediatePropagation();
-
-  //     if (question === "__select_venue__" && scrollAmount > 0) {
-  //       console.log(question, "question");
-  //       // check that venue has been selected before going forward
-  //       if (selectedVenues.length < 2) {
-  //         setHasError(true);
-  //         return false;
-  //       }
-  //     } else if (question && scrollAmount > 0) {
-  //       if (!venueRating[section][question]) {
-  //         setHasError(true);
-  //         return false;
-  //       }
-  //     }
-
-  //     const scrollTarget =
-  //       scrollPosition + (scrollAmount > 0 ? windowHeight : -windowHeight);
-  //     const scrollOptions = {
-  //       top: scrollTarget,
-  //       behavior: "smooth",
-  //     };
-  //     window.scrollTo(scrollOptions);
-  //   }
-  //   return false;
-  // }
-
+  //scroll down function for buttons {comfirm, submit, downward pointing control button}
   const scrollDown = () => {
-    // console.log(question, "question");
+    const currentTime = Date.now();
+    if (currentTime - lastClickTime > 2000) {
+      if (question === "__select_venue__") {
+        // check that venue has been selected before going forward
+        if (selectedVenues.length < 2) {
+          setHasError(true);
+          return;
+        }
+      } else if (question) {
+        if (!venueRating[section][question]) {
+          setHasError(true);
+          return;
+        }
+      }
+      window.scrollBy(0, window.innerHeight); // scroll down by 100vh
 
-    if (question === "__select_venue__") {
-      // console.log(question, "question");
-      // check that venue has been selected before going forward
-      if (selectedVenues.length < 2) {
-        setHasError(true);
-        return;
-      }
-    } else if (question) {
-      if (!venueRating[section][question]) {
-        setHasError(true);
-        return;
-      }
+      setLastClickTime(currentTime);
     }
-    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
   };
 
+  //scroll function called onclicking radio buttons
   const scrolldownForRadio = () => {
-    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
+    const currentTime = Date.now();
+    if (currentTime - lastClickTime > 2000) {
+      window.scrollBy(0, window.innerHeight); // scroll down by 100vh
+      setLastClickTime(currentTime);
+    }
   };
 
   const radioScrollDown = () => {
     setTimeout(scrolldownForRadio, 400);
   };
 
+  //scroll up function for control button pointing up
   const scrollUp = () => {
     window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
   };
