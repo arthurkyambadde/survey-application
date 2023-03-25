@@ -4,9 +4,10 @@ import { useVenue } from "../../hooks/useVenue";
 
 export function Inquiry({ id, title, subtitle, type, options }) {
   const { venueAvailability, handleOptionChange } = useVenue();
+  console.log(venueAvailability, "venue availability");
 
   return (
-    <form className="h-screen w-screen flex flex-col items-center justify-center">
+    <div className="h-screen w-screen flex flex-col items-center justify-center">
       <div className="w-[70%]">
         <div>
           <p className="text-5xl mb-6 font-normal">{title}</p>
@@ -33,6 +34,6 @@ export function Inquiry({ id, title, subtitle, type, options }) {
           </span>
         </div>
       </div>
-    </form>
+    </div>
   );
 }
