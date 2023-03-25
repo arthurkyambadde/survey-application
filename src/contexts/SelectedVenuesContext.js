@@ -50,7 +50,7 @@ export const VenuesProvider = ({ children }) => {
   //scroll down function for buttons {comfirm, submit, downward pointing control button}
   const scrollDown = () => {
     const currentTime = Date.now();
-    if (currentTime - lastClickTime > 2000) {
+    if (currentTime - lastClickTime > 1000) {
       if (question === "__select_venue__") {
         // check that venue has been selected before going forward
         if (selectedVenues.length < 2) {
@@ -71,11 +71,7 @@ export const VenuesProvider = ({ children }) => {
 
   //scroll function called onclicking radio buttons
   const scrolldownForRadio = () => {
-    const currentTime = Date.now();
-    if (currentTime - lastClickTime > 2000) {
-      window.scrollBy(0, window.innerHeight); // scroll down by 100vh
-      setLastClickTime(currentTime);
-    }
+    window.scrollBy(0, window.innerHeight); // scroll down by 100vh
   };
 
   const radioScrollDown = () => {
@@ -84,7 +80,11 @@ export const VenuesProvider = ({ children }) => {
 
   //scroll up function for control button pointing up
   const scrollUp = () => {
-    window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
+    const currentTime = Date.now();
+    if (currentTime - lastClickTime > 1000) {
+      window.scrollBy(0, -window.innerHeight); // scroll up by 100vh
+      setLastClickTime(currentTime);
+    }
   };
 
   return (
