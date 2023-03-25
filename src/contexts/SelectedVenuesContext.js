@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState } from "react";
 import { INITIAL_PLACES_RANKING } from "../data/data";
 
 export const VenuesContext = createContext();
