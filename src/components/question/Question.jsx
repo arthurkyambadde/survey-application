@@ -58,9 +58,11 @@ export function Question({
 
         {description && <p className="text-2xl mb-6">{description}</p>}
         {attachment && <a href={attachment.link}>{attachment.text}</a>}
-        <p className="text-sm  font-sans text-primarybtn mb-2">
-          {optionsError}
-        </p>
+        {type === "multi_select" && (
+          <p className="text-sm  font-sans text-primarybtn mb-2">
+            {optionsError}
+          </p>
+        )}
         <div className="w-64 flex flex-col gap-2">
           {options.map((option) => {
             return (
