@@ -34,7 +34,7 @@ export const data = {
   },
 
   mcqs: {
-    type: "single_select_answers",
+    type: "single_select",
     choices: [
       { id: ulid(), label: "A", text: "My Favourites" },
       { id: ulid(), label: "B", text: "This could work" },
