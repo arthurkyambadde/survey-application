@@ -4,7 +4,6 @@ import { Inquiry } from "../../components/question/Inquiry";
 function AppointmentIntroduction(props) {
   return (
     <Inquiry
-      id={props.id}
       type={props.type}
       title={props.introduction}
       subtitle={props.subtitle}
