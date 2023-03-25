@@ -6,6 +6,7 @@ export function createLayout(layout, components) {
       <>
         {layout.map((item) => {
           const Component = components[item.type];
+
           return <Component {...item} key={item.id} />;
         })}
       </>
