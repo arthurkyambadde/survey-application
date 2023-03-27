@@ -1,14 +1,13 @@
 {
-  "INITIAL_PLACES_RANKING": {
-    "unique_id_A": {},
-    "unique_id_B": {},
-    "unique_id_C": {},
-    "unique_id_D": {},
-    "unique_id_E": {},
-    "unique_id_F": {}
-  },
-
   "data": {
+    "INITIAL_PLACES_RANKING": {
+      "unique_id_A": {},
+      "unique_id_B": {},
+      "unique_id_C": {},
+      "unique_id_D": {},
+      "unique_id_E": {},
+      "unique_id_F": {}
+    },
     "controls_instructions": {
       "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
       "link": "../assets/sectionsvgs/castle.gif"
