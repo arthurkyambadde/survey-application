@@ -424,7 +424,7 @@ export const data = {
       type: "introduction",
       id: ulid(),
       title: "The Venue Ranker",
-      videoUrl: `https://www.youtube.com/embed/E0fPPRiY-5w?autoplay=`,
+      videoUrl: `https://www.youtube.com/embed/E0fPPRiY-5w`,
     },
 
     // form instructions
@@ -443,7 +443,7 @@ export const data = {
       id: ulid(),
       title: "Tell us about your dream venue!",
       answers: {
-        type: "multi_select",
+        type: "multi_select", //multi_select_custom
         choices: [
           { id: questionIds["A"], label: "A", text: "Gordon Greenery" },
           { id: questionIds["B"], label: "B", text: "Desert dream" },
