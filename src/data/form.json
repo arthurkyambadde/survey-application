@@ -1,27 +1,5 @@
 {
   "data": {
-    "INITIAL_PLACES_RANKING": {
-      "unique_id_A": {},
-      "unique_id_B": {},
-      "unique_id_C": {},
-      "unique_id_D": {},
-      "unique_id_E": {},
-      "unique_id_F": {}
-    },
-    "controls_instructions": {
-      "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-      "link": "../assets/sectionsvgs/castle.gif"
-    },
-
-    "mcqs": {
-      "type": "single_select",
-      "choices": [
-        { "id": "mcq_1", "label": "A", "text": "My Favourites" },
-        { "id": "mcq_2", "label": "B", "text": "This could work" },
-        { "id": "mcq_3", "label": "C", "text": "Not for me" }
-      ]
-    },
-
     "form": [
       {
         "layout": {
@@ -62,6 +40,10 @@
                 "attachment": {
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
+                },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
                 },
                 "places": [
                   {
@@ -141,6 +123,10 @@
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
                 },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                },
                 "places": [
                   {
                     "id": "desert_01",
@@ -176,6 +162,10 @@
                 "attachment": {
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
+                },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
                 },
                 "places": [
                   {
@@ -285,6 +275,10 @@
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
                 },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                },
                 "places": [
                   {
                     "id": "industrial_01",
@@ -320,6 +314,10 @@
                 "attachment": {
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
+                },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
                 },
                 "places": [
                   {
@@ -366,6 +364,10 @@
                 "attachment": {
                   "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                   "link": "../to/download Url/of the attachment"
+                },
+                "controls_instructions": {
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
                 },
                 "places": [
                   {
@@ -420,31 +422,79 @@
               {
                 "id": "garden_01",
                 "question": "The Japanese Freindship Garden",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "garden_02",
                 "question": "The Windmill Winery - Lake House",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "garden_03",
                 "question": "Schnep's Farm - Meadow",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "garden_04",
                 "question": "Tubac Golf Course and Resort",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "garden_05",
                 "question": "Verrado Golf Club",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "garden_06",
                 "question": "Encanterra Golf Club",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
@@ -454,11 +504,27 @@
               {
                 "id": "desert_01",
                 "question": "The Paseo",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "desert_02",
                 "question": "Desert Foothills",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
@@ -468,46 +534,118 @@
               {
                 "id": "arizona_01",
                 "question": "Schnep's Farm - Farm House",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_02",
                 "question": "Hacienda Del Sol",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_03",
                 "question": "Tanque Verde - Saguaro Room",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_04",
                 "question": "The Historic Bates Mansion",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_05",
                 "question": "The Irish Cultural Center",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_06",
                 "question": "The Ocotillo",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_07",
                 "question": "The Vic",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_08",
                 "question": "La Cocina at Encanterra ",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "arizona_09",
                 "question": "The Rubi House",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
@@ -517,11 +655,27 @@
               {
                 "id": "industrial_01",
                 "question": "Sunkist",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "industrial_02",
                 "question": "Fabric",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
@@ -531,16 +685,40 @@
               {
                 "id": "modern_01",
                 "question": "Juncture PHX",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "modern_02",
                 "question": "Soho63",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "modern_03",
                 "question": "Hotel Valley Ho",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
@@ -550,21 +728,53 @@
               {
                 "id": "rustic_01",
                 "question": "The Windmill Winery - Big Red Barn",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "rustic_02",
                 "question": "Schnep's Farm - Big Red Barn",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "rustic_03",
                 "question": "Tanque Verde - Big Barn",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               },
               {
                 "id": "rustic_04",
                 "question": "Tanque Verde - Cottonwood Grove",
+                "mcqs": {
+                  "type": "single_select",
+                  "choices": [
+                    { "id": "ulid()", "label": "A", "text": "My Favourites" },
+                    { "id": "ulid()", "label": "B", "text": "This could work" },
+                    { "id": "ulid()", "label": "C", "text": "Not for me" }
+                  ]
+                },
                 "answer": ""
               }
             ]
