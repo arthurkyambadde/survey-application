@@ -15,8 +15,8 @@ export function VenueSelection(props) {
         title={props.title}
         subtitle={props.instruction}
         showError={hasError}
-        type={props.answers.type}
-        options={props.answers.choices}
+        type={props.options.type}
+        options={props.options.choices}
         imageUrl={props.imageUrl}
       />
       <VenueRating />
