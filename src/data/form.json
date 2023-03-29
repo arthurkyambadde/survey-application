@@ -2,18 +2,20 @@
   "data": {
     "form": [
       {
+        "id": "slide_1",
         "layout": {
           "type": "introduction",
-          "id": "ulid()",
+          "id": "slide_1",
           "title": "The Venue Ranker",
           "videoUrl": "https://www.youtube.com/embed/E0fPPRiY-5w"
         }
       },
 
       {
+        "id": "slide_2",
         "layout": {
           "type": "instructions",
-          "id": "ulid()",
+          "id": "slide_2",
           "title": "Pixie point",
           "subtitle": "As you work through the ranker, please only select one as \"my favorite.\" Each venue has a \"venue specifics\" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.",
           "imageUrl": "../assets/sectionsvgs/introduction"
@@ -21,12 +23,27 @@
       },
 
       {
+        "id": "slide_3",
         "layout": {
           "type": "multi_choice_question",
-          "id": "ulid()",
+          "id": "slide_3",
           "title": "Tell us about your dream venue!",
-
-          "imageUrl": "../assets/sectionsvgs/introduction"
+          "imageUrl": "../assets/sectionsvgs/introduction",
+          "options": {
+            "type": "multi_select",
+            "choices": [
+              { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
+              { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
+              {
+                "id": "unique_id_C",
+                "label": "C",
+                "text": "Distinctily arizona"
+              },
+              { "id": "unique_id_D", "label": "D", "text": "Industrial" },
+              { "id": "unique_id_E", "label": "E", "text": "Modern" },
+              { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
+            ]
+          }
         },
         "questions": {
           "type": "multi_select",
@@ -123,16 +140,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -144,16 +165,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -165,16 +190,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_07",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_08",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_09",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -186,16 +215,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_10",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_11",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_12",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -207,16 +240,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_13",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_14",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_15",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -228,16 +265,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_16",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "garden_choice_17",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "garden_choice_18",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -295,16 +336,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "desert_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "desert_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "desert_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -316,16 +361,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "desert_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "desert_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "desert_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -455,16 +504,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -476,16 +529,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -497,16 +554,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_07",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_08",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_09",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -518,16 +579,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_10",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_11",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_12",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -539,16 +604,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_13",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_14",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_15",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -560,16 +629,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_16",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_17",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_18",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -581,16 +654,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_19",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_20",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_21",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -602,16 +679,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_22",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_23",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_24",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -623,16 +704,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_25",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "arizona_choice_26",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "arizona_choice_27",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -690,16 +775,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "industrial_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "industrial_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "industrial_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -711,16 +800,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "industrial_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "industrial_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "industrial_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -788,16 +881,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "modern_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -809,16 +906,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "modern_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -830,16 +931,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_07",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "modern_choice_08",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "modern_choice_09",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -917,16 +1022,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_01",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_02",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "rustic_choice_03",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -938,16 +1047,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_04",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_05",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "rustic_choice_06",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -959,16 +1072,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_07",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_08",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "rustic_choice_09",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -980,16 +1097,20 @@
                       "type": "single_select",
                       "choices": [
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_10",
                           "label": "A",
                           "text": "My Favourites"
                         },
                         {
-                          "id": "ulid()",
+                          "id": "rustic_choice_11",
                           "label": "B",
                           "text": "This could work"
                         },
-                        { "id": "ulid()", "label": "C", "text": "Not for me" }
+                        {
+                          "id": "rustic_choice_12",
+                          "label": "C",
+                          "text": "Not for me"
+                        }
                       ]
                     },
                     "selected": ""
@@ -1002,16 +1123,18 @@
       },
 
       {
+        "id": "slide_4",
         "layout": {
           "type": "introduction",
-          "id": "ulid()",
+          "id": "slide_4",
           "title": "Lets talk dates",
           "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
         }
       },
       {
+        "id": "slide_5",
         "layout": {
-          "id": "ulid()",
+          "id": "slide_5",
           "type": "single_select",
           "introduction": {
             "text": "Venue availability differs drastically based on the date and day you decide to have your wedding. How flexible are you when it comes to your date?"
@@ -1021,28 +1144,28 @@
         "questions": {
           "question": [
             {
-              "id": "ulid()",
+              "id": "venue_availability_01",
               "label": "A",
 
               "choice": "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list."
             },
             {
-              "id": "ulid()",
+              "id": "venue_availability_02",
               "label": "B",
               "choice": " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday."
             },
             {
-              "id": "ulid()",
+              "id": "venue_availability_03",
               "label": "C",
               "choice": "We are willing to look at booking a week day date as long as it’s in the same month."
             },
             {
-              "id": "ulid()",
+              "id": "venue_availability_04",
               "label": "D",
               "choice": "We are flexible on the month and the day if it lets us book our favorite venue."
             },
             {
-              "id": "ulid()",
+              "id": "venue_availability_05",
               "label": "E",
               "choice": "We haven't settled on a date and we're open to suggestions."
             }
@@ -1052,8 +1175,9 @@
       },
 
       {
+        "id": "slide_6",
         "layout": {
-          "id": "ulid()",
+          "id": "slide_6",
           "type": "description",
           "subtile": "If you havent decided just enter any date for this coming month",
           "input_type": "date",
@@ -1065,8 +1189,9 @@
         }
       },
       {
+        "id": "slide_7",
         "layout": {
-          "id": "ulid()",
+          "id": "slide_7",
           "type": "description",
           "subtitle": "If there is anything that needs to be renewed or mentioned additionally now is the time",
           "input_type": "text",
