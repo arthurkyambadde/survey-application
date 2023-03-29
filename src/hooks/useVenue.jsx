@@ -26,6 +26,7 @@ export function useVenue() {
     handleTextInputChange,
     inputText,
     radioScrollDown,
+    layoutData,
   } = useContext(VenuesContext);
 
   const toggleSelectedVenue = (id) => {
@@ -81,5 +82,6 @@ export function useVenue() {
     handleTextInputChange,
     inputText,
     radioScrollDown,
+    layoutData,
   };
 }
