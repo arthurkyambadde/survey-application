@@ -1,5 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { INITIAL_PLACES_RANKING } from "../data/data";
+import jsonDataa from "../data/form.json";
 
 export const VenuesContext = createContext();
 
@@ -16,6 +17,11 @@ export const VenuesProvider = ({ children }) => {
   const [note, setNote] = useState("");
   const [inputText, setInputText] = useState("");
   const [lastClickTime, setLastClickTime] = useState(0);
+  const [layoutData, setLayoutData] = useState([]);
+
+  useEffect(() => {
+    setLayoutData(jsonDataa.data.form);
+  }, []);
 
   // handle text input events input
   function handleTextInputChange(event) {
@@ -115,6 +121,7 @@ export const VenuesProvider = ({ children }) => {
         handleTextInputChange,
         inputText,
         radioScrollDown,
+        layoutData,
       }}
     >
       {children}
