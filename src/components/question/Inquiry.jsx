@@ -9,7 +9,7 @@ export function Inquiry({ id, title, subtitle, type, options }) {
     <div className="h-screen w-screen flex flex-col items-center justify-center">
       <div className="w-[70%]">
         <div>
-          <p className="text-5xl mb-6 font-normal">{title}</p>
+          <p className="text-5xl mb-6 font-normal">{title.text}</p>
           <p className="text-4xl text-gray-500 mb-2">{subtitle}</p>
         </div>
         <div className="w-full p-4 flex flex-col gap-5">
