@@ -6,6 +6,7 @@ import { useVenue } from "../../../hooks/useVenue";
 import "./PlaceRating.css";
 
 export function PlaceRating({
+  venue,
   places,
   onRatePlace,
   placeRatings,
@@ -14,14 +15,16 @@ export function PlaceRating({
 }) {
   const { hasError } = useVenue();
 
+  console.log("rendering------------- place");
+
   return (
     <section className="relative">
       {places.map((place) => {
-        const place_id = place.id;
-        const places_layout = data.STEP_2_QUESTIONS[item_id].places;
-        const place_layout = places_layout.find((item) => item.id === place_id);
+        const places_layout = venue.choices;
+        const place_layout = places_layout.find((item) => item.id === item_id);
 
-        const options = data.mcqs.choices;
+        const options = place.mcqs.choices;
+        console.log("place", options);
 
         return (
           <section className="h-screen w-screen relative" key={place.id}>
@@ -45,7 +48,7 @@ export function PlaceRating({
                   title={place.question}
                   attachment={place_layout.attachment}
                   description={place_layout.description}
-                  type={data.STEP_2_QUESTIONS.type}
+                  type={"single_select"}
                   options={options}
                   onMakeSelection={(answerId) =>
                     onRatePlace(place.id, answerId)
@@ -57,7 +60,7 @@ export function PlaceRating({
                 />
               </div>
               <div className="w-1/2 p-24 h-1/2 flex align-middle justify-center">
-                <MediaViewer videoUrl={place_layout.attachment.link} />
+                <MediaViewer videoUrl={place_layout.layout.attachment.link} />
               </div>
             </div>
           </section>

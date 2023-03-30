@@ -7,7 +7,14 @@ export const VenuesContext = createContext();
 export const VenuesProvider = ({ children }) => {
   const [selectedVenues, setSelectedVenues] = useState([]);
   const [hasError, setHasError] = useState(false);
-  const [venueRating, setVenueRating] = useState(INITIAL_PLACES_RANKING);
+  const [venueRating, setVenueRating] = useState({
+    unique_id_A: {},
+    unique_id_B: {},
+    unique_id_C: {},
+    unique_id_D: {},
+    unique_id_E: {},
+    unique_id_F: {},
+  });
   const [section, setSection] = useState("onboarding");
   const [question, setQuestion] = useState("");
   const [venueAvailability, setVenueAvailability] = useState(null);

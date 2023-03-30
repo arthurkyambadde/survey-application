@@ -1,20 +1,38 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useVenue } from "../../../hooks/useVenue";
 import { Instructions } from "../../onboarding";
 import { PlaceRating } from "./PlaceRating";
 import { data } from "../../../data/data";
 
-export function VenueRating() {
+export function VenueRating({ id }) {
   //
-  const { selectedVenues, venueRating, setPlaceRating } = useVenue();
+  const { selectedVenues, venueRating, setPlaceRating, layoutData } =
+    useVenue();
+
+  const handleSetPlaceRating = useCallback(
+    (itemId, placeId, answer) => {
+      setPlaceRating(itemId, placeId, answer);
+    },
+    [setPlaceRating]
+  );
+
+  console.log("rendering------------- venue");
 
   return (
     <div className="h-auto relative">
       {selectedVenues.map((item) => {
-        const venue = data.STEP_2_QUESTIONS[item].instructions;
+        const venue = layoutData.find((obj) => obj.id === id).questions;
 
-        const venue_questions = data.formQuestion.STEP_2_QUESTIONS_OPTIONS;
-        const placesquestion = venue_questions[item].places;
+        const questions = layoutData.find((obj) => obj.id === id).questions
+          .choices;
+
+        const venue_questions = questions.find(
+          (obj) => obj.id === item
+        ).question;
+
+        const placesquestion = venue_questions.places;
+
+        console.log("test", venue_questions.places);
 
         return (
           <section key={item} className="relative">
@@ -25,9 +43,10 @@ export function VenueRating() {
               imageUrl={venue.imageUrl}
             />
             <PlaceRating
+              venue={venue}
               places={placesquestion}
               onRatePlace={(placeId, answer) => {
-                setPlaceRating(item, placeId, answer);
+                handleSetPlaceRating(item, placeId, answer);
               }}
               placeRatings={venueRating[item]}
               venueTitle={venue.title}

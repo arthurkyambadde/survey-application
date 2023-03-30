@@ -19,7 +19,7 @@ export function VenueSelection(props) {
         options={props.options.choices}
         imageUrl={props.imageUrl}
       />
-      <VenueRating />
+      <VenueRating id={props.id} />
     </>
   );
 }
