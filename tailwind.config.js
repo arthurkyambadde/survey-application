@@ -2,6 +2,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: { max: "479px" },
+        md: { max: "768px" },
+      },
       width: {
         150: "150px",
         190: "190px",
@@ -36,13 +40,7 @@ module.exports = {
         350: "350px",
         620: "620px",
       },
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-      },
+
       colors: {
         headerbg: "rgba(230, 230, 230, 0.9)",
         textColor: "#515151",
