@@ -8,7 +8,7 @@ function PrimaryButton(props) {
 
   return (
     <button
-      className="bg-primarybtn px-3.5 py-1.5 w-auto text-white font-normal text-4xl rounded"
+      className="bg-primarybtn px-3.5 sm:px-3 py-1.5 sm:py-1 w-auto text-white font-normal text-4xl sm:text-2xl rounded"
       onClick={scrollDown}
     >
       {buttonText}

@@ -7,15 +7,17 @@ export function Introduction({ title, videoUrl, imageUrl }) {
     <section
       className={`h-screen w-screen flex items-center flex-col justify-center`}
     >
-      <div className="w-1/2">
-        <h1 className="text-7xl font-normal mb-8 ">{title}</h1>
+      <div className="w-1/2 sm:w-3/4">
+        <h1 className="text-7xl font-normal mb-8 sm:text-3xl sm:mb-4  ">
+          {title}
+        </h1>
 
         {videoUrl && (
           <iframe
             src={videoUrl}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="w-full h-96 mb-5"
+            className="w-full h-96 sm:h-52 mb-5"
             allowFullScreen
             controls
             loop={true}
