@@ -29,11 +29,11 @@ export default function Radio({
         value={id}
       />
       <Label id={id}>
-        <div className="flex gap-1">
-          <span className="w-6 h-6 bg-primarybtn sm:text-base flex justify-center items-center rounded text-white text-lg font-sans ">
+        <div className="flex gap-1 align-middle justify-center">
+          <span className="w-6 h-6 bg-primarybtn sm:text-sm flex justify-center items-center rounded text-white text-lg font-sans ">
             {listId}
           </span>
-          <span className="mr-2 flex text-lg sm:text-base font-sans justify-center items-center">
+          <span className="mr-2 flex text-lg sm:text-sm font-sans justify-center items-center sm:w-[95%]">
             {label}
           </span>
         </div>

@@ -19,14 +19,16 @@ export default function AppointmentScheduler(props) {
 
   return (
     <div>
-      <section className="h-screen w-screen flex  items-center justify-center">
-        <div className="w-1/2 p-16">
-          <p className="text-5xl mb-8">{props.question}</p>
-          <p className="text-4xl text-gray-700 mb-8 ">{props.subtitle}</p>
+      <section className="h-screen w-screen flex  items-center justify-center sm:flex-col-reverse sm:items-center sm:justify-center">
+        <div className="w-1/2 sm:w-full sm:h-2/3 p-16">
+          <p className="text-5xl mb-8 sm:text-3xl sm:mb-2">{props.question}</p>
+          <p className="text-4xl text-gray-700 mb-8 sm:text-3xl sm:mb-2">
+            {props.subtitle}
+          </p>
           {props.input_type === "date" && (
             <div className="flex">
               (
-              <div className="flex flex-col w-14 align-middle justify-center">
+              <div className="flex flex-col w-14 sm:mt-4 align-middle justify-center">
                 <Date
                   value={day}
                   holder="DD"
@@ -80,7 +82,7 @@ export default function AppointmentScheduler(props) {
 
           <Confirm />
         </div>
-        <div className="w-1/2 flex align-middle justify-center">
+        <div className="w-1/2 sm:w-full flex sm:h-1/3 align-middle justify-center">
           <MediaViewer imageUrl={props.link} />
         </div>
       </section>
