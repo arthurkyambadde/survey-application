@@ -88,7 +88,7 @@ export function Question({
         {!showError && <Confirm />}
         <Error text={errorText} visible={showError} />
       </div>
-      <div className="w-1/2 sm:w-full sm:h-1/2 flex align-middle justify-center ">
+      <div className="w-1/2 sm:w-full sm:h-1/5 flex align-middle justify-center ">
         <MediaViewer videoUrl={videoUrl} imageUrl={imageUrl} />
       </div>
     </section>
