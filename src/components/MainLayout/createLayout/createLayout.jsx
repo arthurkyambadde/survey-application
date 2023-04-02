@@ -5,9 +5,9 @@ export function createLayout(layout, components) {
     return (
       <>
         {layout.map((item) => {
-          const Component = components[item.type];
+          const Component = components[item.layout.type];
 
-          return <Component {...item} key={item.id} />;
+          return <Component {...item.layout} key={item.layout.id} />;
         })}
       </>
     );
