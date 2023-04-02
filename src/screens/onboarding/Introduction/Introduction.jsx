@@ -8,7 +8,7 @@ export function Introduction({ title, videoUrl, imageUrl }) {
       className={`h-screen w-screen flex items-center flex-col justify-center`}
     >
       <div className="w-1/2 sm:w-3/4">
-        <h1 className="text-7xl font-normal mb-8 sm:text-3xl sm:mb-4  ">
+        <h1 className="text-7xl font-normal mb-8 sm:text-5xl sm:mb-4  ">
           {title}
         </h1>
 

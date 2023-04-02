@@ -21,16 +21,16 @@ export function Instructions({ title, subtitle, text, imageUrl, id }) {
     <section
       id={id}
       ref={ref}
-      className="h-screen w-screen flex items-center justify-center "
+      className="h-screen sm:h-screen w-screen flex items-center justify-center sm:flex-col-reverse "
     >
-      <div className="w-1/2 p-16 h-1/2 flex flex-col justify-between">
-        <h2 className="text-5xl mb-5 font-normal ">{title}</h2>
-        <p className="text-lg font-sans mb-4">{subtitle}</p>
-        <p className="text-lg font-sans mb-8 ">{text}</p>
+      <div className="w-1/2 sm:w-full  p-16 h-1/2 flex flex-col justify-between">
+        <h2 className="text-5xl sm:text-4xl mb-5 font-normal ">{title}</h2>
+        <p className="text-lg sm:text-base  font-sans mb-4">{subtitle}</p>
+        <p className="text-lg  sm:text-base  font-sans mb-8 ">{text}</p>
 
         <Submit />
       </div>
-      <div className="w-1/2 flex align-middle justify-center">
+      <div className="w-1/2 flex align-middle justify-center ">
         <MediaViewer imageUrl={imageUrl} />
       </div>
     </section>

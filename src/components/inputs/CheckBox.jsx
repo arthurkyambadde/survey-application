@@ -18,10 +18,10 @@ export default function CheckBox({ id, onChange, label, listId, isChecked }) {
       />
       <Label id={id}>
         <div className="flex gap-2">
-          <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold text-lg font-sans">
+          <span className="w-6 h-6 bg-primarybtn flex justify-center items-center rounded text-white font-bold text-lg sm:text-base font-sans">
             {listId}
           </span>
-          <span className="mr-2 flex text-lg font-sans justify-center items-center">
+          <span className="mr-2 flex text-lg sm:text-base font-sans justify-center items-center">
             {label}
           </span>
         </div>

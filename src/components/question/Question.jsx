@@ -48,22 +48,24 @@ export function Question({
     <section
       ref={ref}
       id={id}
-      className="h-screen w-screen flex items-center justify-center relative"
+      className="h-screen w-screen flex items-center sm:flex-col-reverse justify-center relative"
     >
-      <div className="w-1/2 p-24 h-auto flex flex-col justify-between">
-        <p className=" text-5xl font-normal  mb-6">{title}</p>
+      <div className="w-1/2 sm:w-full sm:pl-10 sm:h-2/3 p-24 sm:p-0 h-auto flex flex-col justify-between">
+        <p className=" text-5xl sm:text-4xl font-normal  mb-6 sm:mb-0">
+          {title}
+        </p>
         {subtitle && (
           <p className="text-sm  font-sans text-primarybtn">{subtitle}</p>
         )}
 
-        {description && <p className="text-2xl mb-6">{description}</p>}
+        {description && <p className="text-2xl mb-6 sm:mb-1">{description}</p>}
         {attachment && <a href={attachment.link}>{attachment.text}</a>}
         {type === "multi_select" && (
-          <p className="text-sm  font-sans text-primarybtn mb-2">
+          <p className="text-sm sm:text-xs  font-sans text-primarybtn mb-2">
             {optionsError}
           </p>
         )}
-        <div className="w-64 flex flex-col gap-2">
+        <div className="w-64  flex flex-col gap-2">
           {options.map((option) => {
             return (
               <Choice
@@ -86,7 +88,7 @@ export function Question({
         {!showError && <Confirm />}
         <Error text={errorText} visible={showError} />
       </div>
-      <div className="w-1/2 flex align-middle justify-center">
+      <div className="w-1/2 sm:w-full sm:h-1/3  flex align-middle justify-center ">
         <MediaViewer videoUrl={videoUrl} imageUrl={imageUrl} />
       </div>
     </section>
