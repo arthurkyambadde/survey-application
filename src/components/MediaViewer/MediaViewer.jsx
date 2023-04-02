@@ -4,7 +4,7 @@ export function MediaViewer({ videoUrl, imageUrl }) {
   return (
     <div className="right w-full  flex items-center justify-center  ">
       {imageUrl && (
-        <img src={imageUrl} alt="" className="sm:h-full sm:w-full" />
+        <img src={imageUrl} alt="" className="sm:h-full sm:w-[300px]" />
       )}
       {videoUrl && (
         <iframe

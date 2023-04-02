@@ -56,7 +56,7 @@ export function PlaceRating({
                   showError={hasError}
                 />
               </div>
-              <div className="w-1/2 p-24 sm:pb-0 sm:pt-[200px] h-1/3 sm:mt-8 flex align-middle justify-center">
+              <div className="w-1/2 p-24 sm:pb-0 sm:pt-[200px] h-1/3  sm:w-1/2 sm:mt-8 flex align-middle justify-center">
                 <MediaViewer videoUrl={place_layout.attachment.link} />
               </div>
             </div>
