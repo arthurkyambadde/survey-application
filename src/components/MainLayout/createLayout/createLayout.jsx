@@ -1,18 +1,15 @@
-import React, { useMemo } from "react";
+import React from "react";
 
-export function CreateLayout(layout, components) {
-  const LayoutComponent = useMemo(
-    () => () =>
-      (
-        <>
-          {layout.map((item) => {
-            const Component = components[item.type];
-            return <Component {...item} key={item.id} />;
-          })}
-        </>
-      ),
-    [layout, components]
-  );
+export function createLayout(layout, components) {
+  return function () {
+    return (
+      <>
+        {layout.map((item) => {
+          const Component = components[item.type];
 
-  return LayoutComponent;
+          return <Component {...item} key={item.id} />;
+        })}
+      </>
+    );
+  };
 }
