@@ -5,7 +5,7 @@ import { Instructions } from "../../screens/onboarding/instructions/Instructions
 import { VenueSelection } from "../../screens/question/venue_selection/VenueSelection";
 import AppointmentIntroduction from "../../screens/appointment/AppointmentIntroduction";
 import AppointmentScheduler from "../../screens/appointment/AppointmentScheduler";
-import { createLayout } from "./createLayout/createLayout";
+import { CreateLayout } from "./createLayout/createLayout";
 import { createQuestions } from "./createQuestions/createQuestions";
 import End from "../../screens/end/End";
 import { useVenue } from "../../hooks/useVenue";
@@ -25,7 +25,7 @@ export const MainLayout = () => {
 
   const LayoutComponent = useMemo(
     () =>
-      createLayout(
+      CreateLayout(
         layoutData.map((item) => item.layout),
         components
       ),
