@@ -21,8 +21,10 @@ export function VenueRating({ id }) {
   return (
     <div className="h-auto relative">
       {selectedVenues.map((item) => {
+        //loops through layoutData
         const venue = layoutData.find((obj) => obj.id === id).questions;
 
+        //loops through layoutData
         const questions = layoutData.find((obj) => obj.id === id).questions
           .choices;
 

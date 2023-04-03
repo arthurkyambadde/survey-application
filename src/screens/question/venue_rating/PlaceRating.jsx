@@ -21,6 +21,8 @@ export function PlaceRating({
     <section className="relative">
       {places.map((place) => {
         const places_layout = venue.choices;
+
+        //loops through places_layout
         const place_layout = places_layout.find((item) => item.id === item_id);
 
         const options = place.mcqs.choices;
