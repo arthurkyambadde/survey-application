@@ -23,14 +23,21 @@
         "type": "multi_choice_question",
         "id": "slide_3",
         "title": "Tell us about your dream venue!",
-        "choices": [
-          { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
-          { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
-          { "id": "unique_id_C", "label": "C", "text": "Distinctily arizona" },
-          { "id": "unique_id_D", "label": "D", "text": "Industrial" },
-          { "id": "unique_id_E", "label": "E", "text": "Modern" },
-          { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
-        ],
+        "options": {
+          "type": "multi_select",
+          "choices": [
+            { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
+            { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
+            {
+              "id": "unique_id_C",
+              "label": "C",
+              "text": "Distinctily arizona"
+            },
+            { "id": "unique_id_D", "label": "D", "text": "Industrial" },
+            { "id": "unique_id_E", "label": "E", "text": "Modern" },
+            { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
+          ]
+        },
 
         "imageUrl": "../assets/sectionsvgs/introduction"
       },
