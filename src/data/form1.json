@@ -1,0 +1,1010 @@
+{
+  "data": [
+    {
+      "layout": {
+        "type": "introduction",
+        "id": "slide_1",
+        "title": "The Venue Ranker",
+        "videoUrl": "https://www.youtube.com/embed/E0fPPRiY-5w"
+      }
+    },
+
+    {
+      "layout": {
+        "type": "instructions",
+        "id": "slide_2",
+        "title": "Pixie point",
+        "subtitle": "As you work through the ranker, please only select one as \"my favorite.\" Each venue has a \"venue specifics\" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.",
+        "imageUrl": "../../assets/sectionsvgs/desert_dream"
+      }
+    },
+    {
+      "layout": {
+        "type": "multi_choice_question",
+        "id": "slide_3",
+        "title": "Tell us about your dream venue!",
+        "choices": [
+          { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
+          { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
+          { "id": "unique_id_C", "label": "C", "text": "Distinctily arizona" },
+          { "id": "unique_id_D", "label": "D", "text": "Industrial" },
+          { "id": "unique_id_E", "label": "E", "text": "Modern" },
+          { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
+        ],
+
+        "imageUrl": "../assets/sectionsvgs/introduction"
+      },
+      "questions": {
+        "type": "multi_select",
+        "choices": [
+          {
+            "id": "unique_id_A",
+            "layout": {
+              "label": "A",
+              "text": "Gordon Greenery",
+              "introduction": {
+                "title": "Garden Greenery",
+                "subtitle": "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
+                "imageUrl": "../assets/sectionsvgs/gardenGreen.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "garden_01",
+                  "label": "01",
+                  "description": "",
+
+                  "attachment": {
+                    "text": "Download_Venue Specific Details",
+                    "link": "https://www.youtube.com/embed/AGifXQlNXHw"
+                  }
+                },
+                {
+                  "id": "garden_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "garden_03",
+                  "label": "03",
+                  "question": "Schnep's Farm - Meadow",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  },
+                  "answer": ""
+                },
+                {
+                  "id": "garden_04",
+                  "label": "04",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/mL-WYrEq5EM"
+                  }
+                },
+                {
+                  "id": "garden_05",
+                  "label": "05",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "garden_06",
+                  "label": "06",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                }
+              ]
+            },
+            "question": {
+              "places": [
+                {
+                  "id": "garden_01",
+                  "question": "The Japanese Freindship Garden",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "garden_02",
+                  "question": "The Windmill Winery - Lake House",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "garden_03",
+                  "question": "Schnep's Farm - Meadow",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "garden_04",
+                  "question": "Tubac Golf Course and Resort",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "garden_05",
+                  "question": "Verrado Golf Club",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "garden_06",
+                  "question": "Encanterra Golf Club",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          },
+          {
+            "id": "unique_id_B",
+            "layout": {
+              "label": "B",
+              "text": "Desert dream",
+              "introduction": {
+                "title": "Distinctily arizona",
+                "subtitle": "The definition of the Southwest's history and present!",
+                "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "desert_01",
+                  "label": "01",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/HrAQPgOEO68"
+                  }
+                },
+                {
+                  "id": "desert_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/T4Nbf3k06Vs"
+                  }
+                }
+              ]
+            },
+            "question": {
+              "places": [
+                {
+                  "id": "desert_01",
+                  "question": "The Paseo",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "desert_02",
+                  "question": "Desert Foothills",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          },
+          {
+            "id": "unique_id_C",
+            "layout": {
+              "label": "C",
+              "text": "Distinctily arizona",
+              "introduction": {
+                "title": "Distinctily arizona",
+                "subtitle": "The definition of the Southwest's history and present!",
+                "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "arizona_01",
+                  "label": "01",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "arizona_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/1oTX2dAi5Ig"
+                  }
+                },
+                {
+                  "id": "arizona_03",
+                  "label": "03",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/MetPMveCal0"
+                  }
+                },
+                {
+                  "id": "arizona_04",
+                  "label": "04",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/psMcgHpJ-ec"
+                  }
+                },
+                {
+                  "id": "arizona_05",
+                  "label": "05",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/8UDbpY5-frU"
+                  }
+                },
+                {
+                  "id": "arizona_06",
+                  "label": "06",
+                  "question": "The Ocotillo",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/Y6TGV5PQIE"
+                  },
+                  "answer": ""
+                },
+                {
+                  "id": "arizona_07",
+                  "label": "07",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "arizona_08",
+                  "label": "08",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "arizona_09",
+                  "label": "09",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/_F-fbyBIXro"
+                  }
+                }
+              ]
+            },
+            "question": {
+              "places": [
+                {
+                  "id": "arizona_01",
+                  "question": "Schnep's Farm - Farm House",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_02",
+                  "question": "Hacienda Del Sol",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_03",
+                  "question": "Tanque Verde - Saguaro Room",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_04",
+                  "question": "The Historic Bates Mansion",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_05",
+                  "question": "The Irish Cultural Center",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_06",
+                  "question": "The Ocotillo",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_07",
+                  "question": "The Vic",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_08",
+                  "question": "La Cocina at Encanterra ",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "arizona_09",
+                  "question": "The Rubi House",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          },
+          {
+            "id": "unique_id_D",
+            "layout": {
+              "label": "D",
+              "text": "Industrial",
+              "introduction": {
+                "title": "Industrial",
+                "subtitle": "Clean, classic, and perfectly pulled together!",
+                "imageUrl": "../assets/sectionsvgs/industrial.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "industrial_01",
+                  "label": "01",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/FfNc9n4sIGM"
+                  }
+                },
+                {
+                  "id": "industrial_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/rwGNjmwVp-o"
+                  }
+                }
+              ]
+            },
+            "question": {
+              "places": [
+                {
+                  "id": "industrial_01",
+                  "question": "Sunkist",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "industrial_02",
+                  "question": "Fabric",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          },
+          {
+            "id": "unique_id_E",
+            "layout": {
+              "label": "E",
+              "text": "Modern",
+              "introduction": {
+                "title": "Modern",
+                "subtitle": "Fun, sleek, and cool!",
+                "imageUrl": "../assets/sectionsvgs/modern.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "modern_01",
+                  "label": "01",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/tGrHIo3sh-0"
+                  }
+                },
+                {
+                  "id": "modern_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/-Gdd9qk9B7s"
+                  }
+                },
+                {
+                  "id": "modern_03",
+                  "label": "03",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/BQnWf9iXuj8"
+                  }
+                }
+              ]
+            },
+            "question": {
+              "places": [
+                {
+                  "id": "modern_01",
+                  "question": "Juncture PHX",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "modern_02",
+                  "question": "Soho63",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "modern_03",
+                  "question": "Hotel Valley Ho",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          },
+          {
+            "id": "unique_id_F",
+            "layout": {
+              "label": "F",
+              "text": "Rustic yet Chic",
+              "introduction": {
+                "title": "Rustic Yet Chic",
+                "subtitle": "Classic and cozy spaces that are classed up and ready for a party",
+                "imageUrl": "../assets/sectionsvgs/rustic_yet_chic.gif"
+              },
+              "attachment": {
+                "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+                "link": "../to/download Url/of the attachment"
+              },
+              "controls_instructions": {
+                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                "link": "../assets/sectionsvgs/castle.gif"
+              },
+              "places": [
+                {
+                  "id": "rustic_01",
+                  "label": "01",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "rustic_02",
+                  "label": "02",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/CwLWV3k9h2Y"
+                  }
+                },
+                {
+                  "id": "rustic_03",
+                  "label": "03",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/ezNyNDvRT1U"
+                  }
+                },
+                {
+                  "id": "rustic_04",
+                  "label": "04",
+                  "description": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
+
+                  "attachment": {
+                    "text": "Download PDF",
+                    "link": "https://www.youtube.com/embed/SJ9neqsvNbo"
+                  }
+                }
+              ]
+            },
+            "questions": {
+              "places": [
+                {
+                  "id": "rustic_01",
+                  "question": "The Windmill Winery - Big Red Barn",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "rustic_02",
+                  "question": "Schnep's Farm - Big Red Barn",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "rustic_03",
+                  "question": "Tanque Verde - Big Barn",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                },
+                {
+                  "id": "rustic_04",
+                  "question": "Tanque Verde - Cottonwood Grove",
+                  "mcqs": {
+                    "type": "single_select",
+                    "choices": [
+                      {
+                        "id": "ulid()",
+                        "label": "A",
+                        "text": "My Favourites"
+                      },
+                      {
+                        "id": "ulid()",
+                        "label": "B",
+                        "text": "This could work"
+                      },
+                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                    ]
+                  },
+                  "selected": ""
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

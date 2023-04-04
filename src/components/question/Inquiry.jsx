@@ -4,7 +4,6 @@ import { useVenue } from "../../hooks/useVenue";
 
 export function Inquiry({ id, title, subtitle, type, options }) {
   const { venueAvailability, handleOptionChange } = useVenue();
-  console.log(venueAvailability, "venue availability");
 
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center">

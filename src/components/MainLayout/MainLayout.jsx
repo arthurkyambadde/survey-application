@@ -8,6 +8,7 @@ import AppointmentScheduler from "../../screens/appointment/AppointmentScheduler
 import { createLayout } from "./createLayout/createLayout";
 import { createQuestions } from "./createQuestions/createQuestions";
 import End from "../../screens/end/End";
+import { useVenue } from "../../hooks/useVenue";
 
 const components = {
   introduction: Introduction,
@@ -18,17 +19,26 @@ const components = {
 };
 
 export const MainLayout = () => {
-  const layout = data.venueRankerLayout;
-  const questions = data.formQuestion.venueRanker;
+  const { formData } = useVenue();
+
+  console.log("rendering");
+
+  const layout = formData.data;
+
+  // const layout = data.venueRankerLayout;
+  // const questions = data.formQuestion.venueRanker;
+
+  // const LayoutComponent = createLayout(layout, components);
+  // const QuestionsComponent = createQuestions(questions, components);
 
   const LayoutComponent = createLayout(layout, components);
-  const QuestionsComponent = createQuestions(questions, components);
 
   return (
     <>
-      <LayoutComponent />
+      {/* <LayoutComponent />
       <QuestionsComponent />
-      <End />
+      <End /> */}
+      <LayoutComponent />
     </>
   );
 };
