@@ -6,8 +6,6 @@ import { VenueRating } from "../venue_rating/VenueRating";
 export function VenueSelection(props) {
   const { selectedVenues, toggleSelectedVenue, hasError } = useVenue();
 
-  console.log("props", props);
-
   return (
     <>
       <Question
@@ -18,7 +16,7 @@ export function VenueSelection(props) {
         subtitle={props.instruction}
         showError={hasError}
         type={props.type}
-        options={props.choices}
+        options={props.options}
         imageUrl={props.imageUrl}
       />
       <VenueRating />
