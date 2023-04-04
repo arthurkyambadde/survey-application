@@ -44,6 +44,8 @@ export function Question({
     optionsError = `You can choose ${6 - numSelected} more`;
   }
 
+  console.log("type ---------", options);
+
   return (
     <section
       ref={ref}
@@ -66,13 +68,13 @@ export function Question({
           </p>
         )}
         <div className="w-64  flex flex-col gap-2">
-          {options.map((option) => {
+          {options.choices.map((option) => {
             return (
               <Choice
                 key={option.id}
                 id={superId ? superId + ":" + option.id : option.id}
                 onChange={() => onMakeSelection(option.id)}
-                type={type}
+                type={options.type}
                 label={option.text}
                 listId={option.label}
                 name={id}
