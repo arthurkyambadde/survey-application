@@ -18,7 +18,6 @@ export function VenueRating({ questions }) {
         const controlInstructions =
           questions.choices[item].layout.controls_instructions;
 
-        console.log("controls", controlInstructions);
         return (
           <section key={item} className="relative">
             <Instructions item={venue} />
