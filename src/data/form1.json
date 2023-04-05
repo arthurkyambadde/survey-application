@@ -1102,6 +1102,28 @@
         "title": " What date did you have in mind?",
         "answer": ""
       }
+    },
+    {
+      "layout": {
+        "id": "slide_7",
+        "type": "description",
+        "subtitle": "If there is anything that needs to be renewed or mentioned additionally now is the time",
+        "input_type": "text",
+        "placeHolder": "Type your answer here",
+        "link": "../assets/sectionsvgs/gardenGreen.gif"
+      },
+      "questions": {
+        "title": "Notes for your fairy godmother about venue selection",
+        "answer": ""
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_8",
+        "type": "end_page",
+        "link": "../assets/sectionsvgs/Unicorn.gif",
+        "text": "Way to go!\nYour Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!"
+      }
     }
   ]
 }
