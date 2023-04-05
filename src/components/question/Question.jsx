@@ -44,8 +44,6 @@ export function Question({
     optionsError = `You can choose ${6 - numSelected} more`;
   }
 
-  console.log("type ---------", options);
-
   return (
     <section
       ref={ref}
