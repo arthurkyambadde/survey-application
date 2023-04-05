@@ -43,9 +43,8 @@
       },
       "questions": {
         "type": "multi_select",
-        "choices": [
-          {
-            "id": "unique_id_A",
+        "choices": {
+          "unique_id_A": {
             "layout": {
               "label": "A",
               "text": "Gordon Greenery",
@@ -258,8 +257,7 @@
               ]
             }
           },
-          {
-            "id": "unique_id_B",
+          "unique_id_B": {
             "layout": {
               "label": "B",
               "text": "Desert dream",
@@ -346,8 +344,7 @@
               ]
             }
           },
-          {
-            "id": "unique_id_C",
+          "unique_id_C": {
             "layout": {
               "label": "C",
               "text": "Distinctily arizona",
@@ -653,8 +650,7 @@
               ]
             }
           },
-          {
-            "id": "unique_id_D",
+          "unique_id_D": {
             "layout": {
               "label": "D",
               "text": "Industrial",
@@ -741,8 +737,7 @@
               ]
             }
           },
-          {
-            "id": "unique_id_E",
+          "unique_id_E": {
             "layout": {
               "label": "E",
               "text": "Modern",
@@ -860,8 +855,7 @@
               ]
             }
           },
-          {
-            "id": "unique_id_F",
+          "unique_id_F": {
             "layout": {
               "label": "F",
               "text": "Rustic yet Chic",
@@ -1010,7 +1004,7 @@
               ]
             }
           }
-        ]
+        }
       }
     }
   ]
