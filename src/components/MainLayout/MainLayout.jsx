@@ -16,6 +16,7 @@ const components = {
   multi_choice_question: VenueSelection,
   single_select: AppointmentIntroduction,
   description: AppointmentScheduler,
+  end_page: End,
 };
 
 export const MainLayout = () => {
