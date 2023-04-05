@@ -1092,14 +1092,14 @@
     },
     {
       "layout": {
-        "id": "ulid()",
+        "id": "slide_6",
         "type": "description",
         "subtile": "If you havent decided just enter any date for this coming month",
         "input_type": "date",
         "link": "../assets/sectionsvgs/gardenGreen.gif"
       },
       "questions": {
-        "question": " What date did you have in mind?",
+        "title": " What date did you have in mind?",
         "answer": ""
       }
     }
