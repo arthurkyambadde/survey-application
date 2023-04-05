@@ -1042,6 +1042,66 @@
           }
         }
       }
+    },
+    {
+      "layout": {
+        "type": "introduction",
+        "id": "slide_4",
+        "title": "Lets talk dates",
+        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_5",
+        "type": "single_select",
+        "title": "Venue availability differs drastically based on the date and day you decide to have your wedding. How flexible are you when it comes to your date?",
+        "subtitle": "Description(Optional)"
+      },
+      "questions": {
+        "question": [
+          {
+            "id": "availability_01",
+            "label": "A",
+
+            "choice": "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list."
+          },
+          {
+            "id": "availability_02",
+            "label": "B",
+            "choice": " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday."
+          },
+          {
+            "id": "availability_03",
+            "label": "C",
+            "choice": "We are willing to look at booking a week day date as long as it’s in the same month."
+          },
+          {
+            "id": "availability_04",
+            "label": "D",
+            "choice": "We are flexible on the month and the day if it lets us book our favorite venue."
+          },
+          {
+            "id": "availability_05",
+            "label": "E",
+            "choice": "We haven't settled on a date and we're open to suggestions."
+          }
+        ],
+        "selected": ""
+      }
+    },
+    {
+      "layout": {
+        "id": "ulid()",
+        "type": "description",
+        "subtile": "If you havent decided just enter any date for this coming month",
+        "input_type": "date",
+        "link": "../assets/sectionsvgs/gardenGreen.gif"
+      },
+      "questions": {
+        "question": " What date did you have in mind?",
+        "answer": ""
+      }
     }
   ]
 }
