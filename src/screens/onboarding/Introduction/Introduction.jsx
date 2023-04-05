@@ -2,7 +2,9 @@ import React from "react";
 import { Submit } from "../../../components/buttons/Submit";
 import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 
-export function Introduction({ title, videoUrl, imageUrl }) {
+export function Introduction(props) {
+  const { title, videoUrl, imageUrl } = props.item.layout;
+
   return (
     <section
       className={`h-screen w-screen flex items-center flex-col justify-center`}

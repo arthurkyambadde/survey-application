@@ -1,7 +1,6 @@
 import React from "react";
 import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 import { Question } from "../../../components/question/Question";
-import { data } from "../../../data/data";
 import { useVenue } from "../../../hooks/useVenue";
 import "./PlaceRating.css";
 
@@ -11,6 +10,7 @@ export function PlaceRating({
   placeRatings,
   venueTitle,
   item_id,
+  placeQuestions,
 }) {
   const { hasError } = useVenue();
 
@@ -18,10 +18,14 @@ export function PlaceRating({
     <section className="relative">
       {places.map((place) => {
         const place_id = place.id;
-        const places_layout = data.STEP_2_QUESTIONS[item_id].places;
+        const places_layout = places;
         const place_layout = places_layout.find((item) => item.id === place_id);
 
-        const options = data.mcqs.choices;
+        const placeQuestion = placeQuestions.find(
+          (item) => item.id === place.id
+        );
+
+        const options = placeQuestion.mcqs;
 
         return (
           <section className="h-screen w-screen relative " key={place.id}>
@@ -45,7 +49,7 @@ export function PlaceRating({
                   title={place.question}
                   attachment={place_layout.attachment}
                   description={place_layout.description}
-                  type={data.STEP_2_QUESTIONS.type}
+                  type={options.type}
                   options={options}
                   onMakeSelection={(answerId) =>
                     onRatePlace(place.id, answerId)
