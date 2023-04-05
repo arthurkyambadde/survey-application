@@ -10,8 +10,6 @@ export function VenueRating({ questions }) {
   return (
     <div className="h-auto relative">
       {selectedVenues.map((item) => {
-        // console.log("item", item);
-
         const choices = questions.choices;
         const venue = choices[item].layout.instructions;
 
