@@ -15,7 +15,7 @@
         "id": "slide_2",
         "title": "Pixie point",
         "subtitle": "As you work through the ranker, please only select one as \"my favorite.\" Each venue has a \"venue specifics\" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.",
-        "imageUrl": "../../assets/sectionsvgs/desert_dream"
+        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
       }
     },
     {
@@ -39,7 +39,7 @@
           ]
         },
 
-        "imageUrl": "../assets/sectionsvgs/introduction"
+        "imageUrl": "../assets/sectionsvgs/introduction.gif"
       },
       "questions": {
         "type": "multi_select",
