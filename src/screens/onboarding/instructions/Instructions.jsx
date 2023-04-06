@@ -4,7 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { useVenue } from "../../../hooks/useVenue";
 import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 
-export function Instructions({ title, subtitle, text, imageUrl, id }) {
+export function Instructions(props) {
+  const { title, subtitle, text, imageUrl, id } = props.item.layout;
+
   const { ref, inView: myElementIsVisible } = useInView({
     threshold: 0.5,
   });

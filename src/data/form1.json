@@ -15,7 +15,7 @@
         "id": "slide_2",
         "title": "Pixie point",
         "subtitle": "As you work through the ranker, please only select one as \"my favorite.\" Each venue has a \"venue specifics\" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.",
-        "imageUrl": "../../assets/sectionsvgs/desert_dream"
+        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
       }
     },
     {
@@ -23,37 +23,49 @@
         "type": "multi_choice_question",
         "id": "slide_3",
         "title": "Tell us about your dream venue!",
-        "choices": [
-          { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
-          { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
-          { "id": "unique_id_C", "label": "C", "text": "Distinctily arizona" },
-          { "id": "unique_id_D", "label": "D", "text": "Industrial" },
-          { "id": "unique_id_E", "label": "E", "text": "Modern" },
-          { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
-        ],
+        "options": {
+          "type": "multi_select",
+          "choices": [
+            { "id": "unique_id_A", "label": "A", "text": "Gordon Greenery" },
+            { "id": "unique_id_B", "label": "B", "text": "Desert dream" },
+            {
+              "id": "unique_id_C",
+              "label": "C",
+              "text": "Distinctily arizona"
+            },
+            { "id": "unique_id_D", "label": "D", "text": "Industrial" },
+            { "id": "unique_id_E", "label": "E", "text": "Modern" },
+            { "id": "unique_id_F", "label": "F", "text": "Rustic yet Chic" }
+          ]
+        },
 
-        "imageUrl": "../assets/sectionsvgs/introduction"
+        "imageUrl": "../assets/sectionsvgs/introduction.gif"
       },
       "questions": {
         "type": "multi_select",
-        "choices": [
-          {
-            "id": "unique_id_A",
+        "choices": {
+          "unique_id_A": {
             "layout": {
               "label": "A",
               "text": "Gordon Greenery",
-              "introduction": {
-                "title": "Garden Greenery",
-                "subtitle": "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
-                "imageUrl": "../assets/sectionsvgs/gardenGreen.gif"
+              "instructions": {
+                "layout": {
+                  "id": "Garden Greenery",
+                  "title": "Garden Greenery",
+                  "subtitle": "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
+                  "imageUrl": "../assets/sectionsvgs/gardenGreen.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "gordon_green",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -129,16 +141,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -150,16 +162,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -171,16 +183,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -192,16 +204,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -213,16 +225,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -234,16 +246,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -251,23 +263,28 @@
               ]
             }
           },
-          {
-            "id": "unique_id_B",
+          "unique_id_B": {
             "layout": {
               "label": "B",
               "text": "Desert dream",
-              "introduction": {
-                "title": "Distinctily arizona",
-                "subtitle": "The definition of the Southwest's history and present!",
-                "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+              "instructions": {
+                "layout": {
+                  "id": "Desert_dream",
+                  "title": "Desert dream",
+                  "subtitle": "The definition of the Southwest's history and present!",
+                  "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "desert_dream",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -301,16 +318,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -322,16 +339,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -339,23 +356,28 @@
               ]
             }
           },
-          {
-            "id": "unique_id_C",
+          "unique_id_C": {
             "layout": {
               "label": "C",
               "text": "Distinctily arizona",
-              "introduction": {
-                "title": "Distinctily arizona",
-                "subtitle": "The definition of the Southwest's history and present!",
-                "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+              "instructions": {
+                "layout": {
+                  "id": "Distinctily_arizona",
+                  "title": "Distinctily arizona",
+                  "subtitle": "The definition of the Southwest's history and present!",
+                  "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "arizona",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -461,16 +483,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -482,16 +504,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -503,16 +525,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -524,16 +546,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -545,16 +567,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -566,16 +588,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -587,16 +609,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -608,16 +630,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -629,16 +651,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -646,23 +668,28 @@
               ]
             }
           },
-          {
-            "id": "unique_id_D",
+          "unique_id_D": {
             "layout": {
               "label": "D",
               "text": "Industrial",
-              "introduction": {
-                "title": "Industrial",
-                "subtitle": "Clean, classic, and perfectly pulled together!",
-                "imageUrl": "../assets/sectionsvgs/industrial.gif"
+              "instructions": {
+                "layout": {
+                  "id": "industrial",
+                  "title": "Industrial",
+                  "subtitle": "Clean, classic, and perfectly pulled together!",
+                  "imageUrl": "../assets/sectionsvgs/industrial.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "industrial",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -696,16 +723,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -717,16 +744,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -734,23 +761,28 @@
               ]
             }
           },
-          {
-            "id": "unique_id_E",
+          "unique_id_E": {
             "layout": {
               "label": "E",
               "text": "Modern",
-              "introduction": {
-                "title": "Modern",
-                "subtitle": "Fun, sleek, and cool!",
-                "imageUrl": "../assets/sectionsvgs/modern.gif"
+              "instructions": {
+                "layout": {
+                  "id": "Modern",
+                  "title": "Modern",
+                  "subtitle": "Fun, sleek, and cool!",
+                  "imageUrl": "../assets/sectionsvgs/modern.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "modern",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -794,16 +826,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -815,16 +847,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -836,16 +868,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -853,23 +885,28 @@
               ]
             }
           },
-          {
-            "id": "unique_id_F",
+          "unique_id_F": {
             "layout": {
               "label": "F",
               "text": "Rustic yet Chic",
-              "introduction": {
-                "title": "Rustic Yet Chic",
-                "subtitle": "Classic and cozy spaces that are classed up and ready for a party",
-                "imageUrl": "../assets/sectionsvgs/rustic_yet_chic.gif"
+              "instructions": {
+                "layout": {
+                  "id": "Rustic_Yet_Chic",
+                  "title": "Rustic Yet Chic",
+                  "subtitle": "Classic and cozy spaces that are classed up and ready for a party",
+                  "imageUrl": "../assets/sectionsvgs/rustic_yet_chic.gif"
+                }
               },
               "attachment": {
                 "text": "This venue is part of the Luxury collection, selecting this option will incur an additional cost up to $5K.",
                 "link": "../to/download Url/of the attachment"
               },
               "controls_instructions": {
-                "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                "link": "../assets/sectionsvgs/castle.gif"
+                "layout": {
+                  "id": "rustic_yet",
+                  "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
+                  "link": "../assets/sectionsvgs/castle.gif"
+                }
               },
               "places": [
                 {
@@ -914,7 +951,7 @@
                 }
               ]
             },
-            "questions": {
+            "question": {
               "places": [
                 {
                   "id": "rustic_01",
@@ -923,16 +960,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -944,16 +981,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -965,16 +1002,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -986,16 +1023,16 @@
                     "type": "single_select",
                     "choices": [
                       {
-                        "id": "ulid()",
+                        "id": "mcq_1",
                         "label": "A",
                         "text": "My Favourites"
                       },
                       {
-                        "id": "ulid()",
+                        "id": "mcq_2",
                         "label": "B",
                         "text": "This could work"
                       },
-                      { "id": "ulid()", "label": "C", "text": "Not for me" }
+                      { "id": "mcq_3", "label": "C", "text": "Not for me" }
                     ]
                   },
                   "selected": ""
@@ -1003,7 +1040,89 @@
               ]
             }
           }
-        ]
+        }
+      }
+    },
+    {
+      "layout": {
+        "type": "introduction",
+        "id": "slide_4",
+        "title": "Lets talk dates",
+        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_5",
+        "type": "single_select",
+        "title": "Venue availability differs drastically based on the date and day you decide to have your wedding. How flexible are you when it comes to your date?",
+        "subtitle": "Description(Optional)"
+      },
+      "questions": {
+        "question": [
+          {
+            "id": "availability_01",
+            "label": "A",
+
+            "choice": "Our date is SUPER important to us. If our top pick doesn’t have it available, move on to the next venue on our list."
+          },
+          {
+            "id": "availability_02",
+            "label": "B",
+            "choice": " We are willing to look at another date in the same month as long as it’s a Friday, Saturday, or Sunday."
+          },
+          {
+            "id": "availability_03",
+            "label": "C",
+            "choice": "We are willing to look at booking a week day date as long as it’s in the same month."
+          },
+          {
+            "id": "availability_04",
+            "label": "D",
+            "choice": "We are flexible on the month and the day if it lets us book our favorite venue."
+          },
+          {
+            "id": "availability_05",
+            "label": "E",
+            "choice": "We haven't settled on a date and we're open to suggestions."
+          }
+        ],
+        "selected": ""
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_6",
+        "type": "description",
+        "subtile": "If you havent decided just enter any date for this coming month",
+        "input_type": "date",
+        "link": "../assets/sectionsvgs/gardenGreen.gif"
+      },
+      "questions": {
+        "title": " What date did you have in mind?",
+        "answer": ""
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_7",
+        "type": "description",
+        "subtitle": "If there is anything that needs to be renewed or mentioned additionally now is the time",
+        "input_type": "text",
+        "placeHolder": "Type your answer here",
+        "link": "../assets/sectionsvgs/gardenGreen.gif"
+      },
+      "questions": {
+        "title": "Notes for your fairy godmother about venue selection",
+        "answer": ""
+      }
+    },
+    {
+      "layout": {
+        "id": "slide_8",
+        "type": "end_page",
+        "link": "../assets/sectionsvgs/Unicorn.gif",
+        "text": "Way to go!\nYour Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!"
       }
     }
   ]

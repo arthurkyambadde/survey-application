@@ -66,18 +66,18 @@ export function Question({
           </p>
         )}
         <div className="w-64  flex flex-col gap-2">
-          {options.map((option) => {
+          {options.choices.map((option) => {
             return (
               <Choice
                 key={option.id}
                 id={superId ? superId + ":" + option.id : option.id}
                 onChange={() => onMakeSelection(option.id)}
-                type={type}
+                type={options.type}
                 label={option.text}
                 listId={option.label}
                 name={id}
                 isChecked={
-                  type === "multi_select"
+                  type === "multi_choice_question"
                     ? selectedValues.includes(option.id)
                     : selectedValue === option.id
                 }

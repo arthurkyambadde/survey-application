@@ -12,9 +12,7 @@ export function Inquiry({ id, title, subtitle, type, options }) {
           <p className="text-5xl mb-6 font-normal sm:text-3xl sm:mb-1">
             {title}
           </p>
-          <p className="text-4xl text-gray-500 mb-2 sm:text-2xl mb-1">
-            {subtitle}
-          </p>
+          <p className="text-4xl text-gray-500 sm:text-2xl mb-1">{subtitle}</p>
         </div>
         <div className="w-full p-4 flex flex-col gap-5">
           {options.map((option) => {

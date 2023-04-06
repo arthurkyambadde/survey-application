@@ -16,28 +16,18 @@ const components = {
   multi_choice_question: VenueSelection,
   single_select: AppointmentIntroduction,
   description: AppointmentScheduler,
+  end_page: End,
 };
 
 export const MainLayout = () => {
   const { formData } = useVenue();
 
-  console.log("rendering");
-
   const layout = formData.data;
-
-  // const layout = data.venueRankerLayout;
-  // const questions = data.formQuestion.venueRanker;
-
-  // const LayoutComponent = createLayout(layout, components);
-  // const QuestionsComponent = createQuestions(questions, components);
 
   const LayoutComponent = createLayout(layout, components);
 
   return (
     <>
-      {/* <LayoutComponent />
-      <QuestionsComponent />
-      <End /> */}
       <LayoutComponent />
     </>
   );

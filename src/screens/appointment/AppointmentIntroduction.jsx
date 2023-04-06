@@ -2,12 +2,16 @@ import React from "react";
 import { Inquiry } from "../../components/question/Inquiry";
 
 function AppointmentIntroduction(props) {
+  const layout = props.item.layout;
+  const questions = props.item.questions;
+
   return (
     <Inquiry
-      type={props.type}
-      title={props.introduction}
-      subtitle={props.subtitle}
-      options={props.question}
+      id={layout.id}
+      type={layout.type}
+      title={layout.title}
+      subtitle={layout.subtitle}
+      options={questions.question}
     />
   );
 }
