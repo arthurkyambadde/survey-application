@@ -22,8 +22,6 @@ const components = {
 export const MainLayout = () => {
   const { formData } = useVenue();
 
-  console.log("rendering");
-
   const layout = formData.data;
 
   const LayoutComponent = createLayout(layout, components);
