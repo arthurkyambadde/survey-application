@@ -18,6 +18,22 @@
       "sizes": "512x512"
     }
   ],
+
+  "manifest_version": 2,
+  "version": "1.0",
+  "web_accessible_resources": [
+    "assets/sectionsvgs/introduction.gif",
+    "assets/sectionsvgs/castle.gif",
+    "assets/sectionsvgs/gardenGreen.gif",
+    "assets/sectionsvgs/desert_dream.gif",
+    "assets/sectionsvgs/distinctly_arizona.gif",
+    "assets/sectionsvgs/industrial.gif",
+    "assets/sectionsvgs/modern.gif",
+    "assets/sectionsvgs/rustic_yet_chic.gif",
+    "assets/sectionsvgs/Unicorn.gif",
+    "fonts/open-sans-v23-latin-regular.woff",
+    "fonts/open-sans-v23-latin-regular.woff"
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
