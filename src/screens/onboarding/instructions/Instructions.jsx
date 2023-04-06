@@ -7,6 +7,8 @@ import { MediaViewer } from "../../../components/MediaViewer/MediaViewer";
 export function Instructions(props) {
   const { title, subtitle, text, imageUrl, id } = props.item.layout;
 
+  console.log("image url", imageUrl);
+
   const { ref, inView: myElementIsVisible } = useInView({
     threshold: 0.5,
   });

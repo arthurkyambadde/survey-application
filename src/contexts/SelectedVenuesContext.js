@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import { INITIAL_PLACES_RANKING } from "../data/data";
 import formData from "../data/form1.json";
 
 export const VenuesContext = createContext();
