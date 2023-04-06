@@ -15,7 +15,7 @@
         "id": "slide_2",
         "title": "Pixie point",
         "subtitle": "As you work through the ranker, please only select one as \"my favorite.\" Each venue has a \"venue specifics\" PDF for you to download and review. Be sure to look this over before deciding if a venue is the one for you.",
-        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
+        "imageUrl": "./assets/sectionsvgs/desert_dream.gif"
       }
     },
     {
@@ -39,7 +39,7 @@
           ]
         },
 
-        "imageUrl": "../assets/sectionsvgs/introduction.gif"
+        "imageUrl": "./assets/sectionsvgs/introduction"
       },
       "questions": {
         "type": "multi_select",
@@ -53,7 +53,7 @@
                   "id": "Garden Greenery",
                   "title": "Garden Greenery",
                   "subtitle": "An oasis in the desert, you'll enjoy lush gardens, grassy spaces, and trees!",
-                  "imageUrl": "../assets/sectionsvgs/gardenGreen.gif"
+                  "imageUrl": "./assets/sectionsvgs/gardenGreen.gif"
                 }
               },
               "attachment": {
@@ -64,7 +64,7 @@
                 "layout": {
                   "id": "gordon_green",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -272,7 +272,7 @@
                   "id": "Desert_dream",
                   "title": "Desert dream",
                   "subtitle": "The definition of the Southwest's history and present!",
-                  "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+                  "imageUrl": "./assets/sectionsvgs/distinctly_arizona.gif"
                 }
               },
               "attachment": {
@@ -283,7 +283,7 @@
                 "layout": {
                   "id": "desert_dream",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -365,7 +365,7 @@
                   "id": "Distinctily_arizona",
                   "title": "Distinctily arizona",
                   "subtitle": "The definition of the Southwest's history and present!",
-                  "imageUrl": "../assets/sectionsvgs/distinctly_arizona.gif"
+                  "imageUrl": "./assets/sectionsvgs/distinctly_arizona.gif"
                 }
               },
               "attachment": {
@@ -376,7 +376,7 @@
                 "layout": {
                   "id": "arizona",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -677,7 +677,7 @@
                   "id": "industrial",
                   "title": "Industrial",
                   "subtitle": "Clean, classic, and perfectly pulled together!",
-                  "imageUrl": "../assets/sectionsvgs/industrial.gif"
+                  "imageUrl": "./assets/sectionsvgs/industrial.gif"
                 }
               },
               "attachment": {
@@ -688,7 +688,7 @@
                 "layout": {
                   "id": "industrial",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -770,7 +770,7 @@
                   "id": "Modern",
                   "title": "Modern",
                   "subtitle": "Fun, sleek, and cool!",
-                  "imageUrl": "../assets/sectionsvgs/modern.gif"
+                  "imageUrl": "./assets/sectionsvgs/modern.gif"
                 }
               },
               "attachment": {
@@ -781,7 +781,7 @@
                 "layout": {
                   "id": "modern",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -894,7 +894,7 @@
                   "id": "Rustic_Yet_Chic",
                   "title": "Rustic Yet Chic",
                   "subtitle": "Classic and cozy spaces that are classed up and ready for a party",
-                  "imageUrl": "../assets/sectionsvgs/rustic_yet_chic.gif"
+                  "imageUrl": "./assets/sectionsvgs/rustic_yet_chic.gif"
                 }
               },
               "attachment": {
@@ -905,7 +905,7 @@
                 "layout": {
                   "id": "rustic_yet",
                   "text": "You can always use the little blue navigation arrows at the bottom of the screen to go back and review the venues again.",
-                  "link": "../assets/sectionsvgs/castle.gif"
+                  "imageUrl": "./assets/sectionsvgs/castle.gif"
                 }
               },
               "places": [
@@ -1048,7 +1048,7 @@
         "type": "introduction",
         "id": "slide_4",
         "title": "Lets talk dates",
-        "imageUrl": "../assets/sectionsvgs/desert_dream.gif"
+        "imageUrl": "./assets/sectionsvgs/desert_dream.gif"
       }
     },
     {
@@ -1096,7 +1096,7 @@
         "type": "description",
         "subtile": "If you havent decided just enter any date for this coming month",
         "input_type": "date",
-        "link": "../assets/sectionsvgs/gardenGreen.gif"
+        "link": "./assets/sectionsvgs/gardenGreen.gif"
       },
       "questions": {
         "title": " What date did you have in mind?",
@@ -1110,7 +1110,7 @@
         "subtitle": "If there is anything that needs to be renewed or mentioned additionally now is the time",
         "input_type": "text",
         "placeHolder": "Type your answer here",
-        "link": "../assets/sectionsvgs/gardenGreen.gif"
+        "link": "./assets/sectionsvgs/gardenGreen.gif"
       },
       "questions": {
         "title": "Notes for your fairy godmother about venue selection",
@@ -1121,7 +1121,7 @@
       "layout": {
         "id": "slide_8",
         "type": "end_page",
-        "link": "../assets/sectionsvgs/Unicorn.gif",
+        "link": "./assets/sectionsvgs/Unicorn.gif",
         "text": "Way to go!\nYour Venue Ranker is complete :) Your info is flittering off to Madge and her team. We'll be in touch soon!"
       }
     }
