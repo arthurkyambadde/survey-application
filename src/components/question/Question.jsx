@@ -77,7 +77,7 @@ export function Question({
                 listId={option.label}
                 name={id}
                 isChecked={
-                  type === "multi_select"
+                  type === "multi_choice_question"
                     ? selectedValues.includes(option.id)
                     : selectedValue === option.id
                 }
