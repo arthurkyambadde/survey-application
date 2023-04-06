@@ -1,12 +1,10 @@
 import React from "react";
-import { data } from "../../data/data";
 import { Introduction } from "../../screens/onboarding/Introduction/Introduction";
 import { Instructions } from "../../screens/onboarding/instructions/Instructions";
 import { VenueSelection } from "../../screens/question/venue_selection/VenueSelection";
 import AppointmentIntroduction from "../../screens/appointment/AppointmentIntroduction";
 import AppointmentScheduler from "../../screens/appointment/AppointmentScheduler";
 import { createLayout } from "./createLayout/createLayout";
-import { createQuestions } from "./createQuestions/createQuestions";
 import End from "../../screens/end/End";
 import { useVenue } from "../../hooks/useVenue";
 
