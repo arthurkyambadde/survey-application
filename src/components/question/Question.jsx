@@ -48,9 +48,9 @@ export function Question({
     <section
       ref={ref}
       id={id}
-      className="h-screen w-screen flex items-center sm:flex-col-reverse justify-center relative"
+      className="h-screen w-screen flex items-center sm:flex-col-reverse justify-center "
     >
-      <div className="w-1/2 sm:w-full sm:pl-10 sm:h-2/3 p-24 sm:p-0 h-auto flex flex-col justify-between">
+      <div className="w-1/2 sm:w-full sm:pl-10 sm:h-2/3 p-24 sm:p-0 h-full flex flex-col justify-between">
         <p className=" text-5xl sm:text-4xl font-normal  mb-6 sm:mb-0">
           {title}
         </p>
