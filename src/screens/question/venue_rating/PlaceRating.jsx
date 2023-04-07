@@ -30,7 +30,7 @@ export function PlaceRating({
         return (
           <section className="h-screen w-screen relative " key={place.id}>
             <div
-              className="w-full h-14 text-4xl bg-headerbg flex items-center justify-center header-animation"
+              className="w-full h-14 text-4xl bg-headerbg flex items-center justify-center "
               style={{
                 position: "absolute",
                 top: 0,
